@@ -40,17 +40,15 @@
 						</div>
 					</div>
 					<div class="header-login">
-						<div class="login">
-							<a class="login-icon">Вход</a>
-							<div class="login-modal">
-								<form action="">
-									<input type="email" placeholder="Электронная почта">
-									<input type="password" placeholder="Пароль">
-									<button>Войти</button>
-									<a href="">Забыли пароль?</a>
-									<a href="">Новая регистрация</a>
-								</form>
-							</div>
+						<a class="login-icon">Вход</a>
+						<div class="login-modal">
+							<form action="">
+								<input type="email" placeholder="Электронная почта">
+								<input type="password" placeholder="Пароль">
+								<button>Войти</button>
+								<a href="">Забыли пароль?</a>
+								<a href="">Новая регистрация</a>
+							</form>
 						</div>
 					</div>
 					<div class="header-cart">
@@ -137,9 +135,9 @@
 	</article>
 	<!-- Banners-end -->
 	<!-- Catalog -->
-	<section class="main-catalog">
+	<div class="main-catalog">
 		<div class="container">
-			<div class="catalog">
+			<div class="catalog-list">
 				<div class="catalog-item">
 					<div class="hit"></div>
 					<div class="catalog-round-item">
@@ -148,8 +146,6 @@
 					<p>310 Р/кг<p>
 					<h4><a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></h4>
 				</div>
-			</div>
-			<div class="catalog">
 				<div class="catalog-item">
 					<div class="hit"></div>
 					<div class="catalog-round-item">
@@ -158,8 +154,6 @@
 					<p>380 Р/кг</p>
 					<h4><a href="#">Сливочно-кофейное с кусочками шоколада</a></h4>
 				</div>
-			</div>
-			<div class="catalog">
 				<div class="catalog-item">
 					<div class="hit"></div>
 					<div class="catalog-round-item">
@@ -168,8 +162,6 @@
 					<p>355 Р/кг</p>
 					<h4><a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a></h4>
 				</div>
-			</div>
-			<div class="catalog">
 				<div class="catalog-item">
 					<div class="hit"></div>
 					<div class="catalog-round-item">
@@ -180,7 +172,7 @@
 				</div>
 			</div>
 		</div>
-	</section>
+	</div>
 	<!-- Catalog-end -->
 	<!-- About -->
 	<section class="main-about">
@@ -188,19 +180,15 @@
 			<div class="about">
 				<h4>Магазин Глейси  — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h4>
 				<div class="about-item">
-					<img class="about-icon" src="http://placehold.it/150x100">
 					<p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
 				</div>
 				<div class="about-item">
-					<img class="about-icon" src="http://placehold.it/150x100">
 					<p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
 				</div>
 				<div class="about-item">
-					<img class="about-icon" src="http://placehold.it/150x100">
 					<p>Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
 				</div>
 				<div class="about-item">
-					<img class="about-icon" src="http://placehold.it/150x100">
 					<p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет ему сохранить свой превосходный вкус.</p>
 				</div>
 			</div>
@@ -209,25 +197,29 @@
 	<!-- About-end -->
 	<!-- News-Subcribe -->
 	<div class="container">
-	<section class="left-bar">
-		<div class="news">
-			<h6>Новое в нашем блоге</h6>
-			<h4><a href="#">10 способов сервировки фруктовых щербетов к столу</a></h4>
+		<div class="news-subcribe">
+			<div class="left-bar">
+				<div class="news">
+					<h6>Новое в нашем блоге</h6>
+					<h4><a href="#">10 способов сервировки фруктовых щербетов к столу</a></h4>
+				</div>
+			</div>
+			<div class="right-bar">
+				<div class="subcribe">
+					<form action="#" method="post">
+						<label>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =) </label>
+						<input type="text" name="e-mail" placeholder="Электронная почта">
+						<input type="submit" value="Отправить">
+					</form>
+				</div>
+			</div>
 		</div>
-	</section>
-	<section class="right-bar">
-		<div class="subcribe">
-			<form action="#" method="post">
-				<label>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =) </label>
-				<input type="text" name="e-mail" placeholder="Электронная почта">
-				<input type="submit" value="Отправить">
-			</form>
-		</div>
-	</section>
+	</div>
 	<!-- Карта -->
-	<section>
+	<div class="contacts">
 		<div class="container">
 			<div class="map">
+				<img src="http://placehold.it/150x100">
 				<div class="address">
 					<p>Адрес главного офиса и офлайн магазина:<br>
 					ул. Большая Конюшенная 19/8, Санкт-Петербург</p>
@@ -252,7 +244,7 @@
 				</div>	
 			</div>
 		</div>
-	</section>
+	</div>
 	<!-- News-Subcribe-end-->
     <!-- Footer --> 
 	<footer>
