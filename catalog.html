@@ -131,95 +131,78 @@
 			<section class="catalog-name">
 				<h1>Сливочное мороженое</h1>
 			</section>
-			<div class="catalog-filter">
-				<div class="filter-form">
-					<div class="sort-filter">
-						<div class="sorting-filter">
-							<p>Сортировка:</p>
-							<form action="#" method="post">
-								<select name="popular">
-									<label for="popular-sort">
-										<option value="popular" id="popular-sort" selected>по пополярности</option>
-									</label>
-									<label for="cheap-sort">
-										<option value="cheap" id="cheap-sort">сначала недорогие</option>
-									</label>
-									<label for="expensive-sort">
-										<option value="expensive" id="expensive-sort">сначала дорогие</option>
-									</label>
-									<label for="fat-sort">
-										<option value="fat" id="fat-sort">по жирности</option>
-									</label>
-								</select> 
-							</form>
+			<div class="main-filter">
+				<form action="#" method="post">
+					<div class="main-filter-top">
+						<section class="sorting-filter">
+							<h4>Сортировка:</h4>
+							<select name="popular">
+								<option value="popular" id="popular-sort" selected>по пополярности</option>
+								<option value="cheap" id="cheap-sort">сначала недорогие</option>
+								<option value="expensive" id="expensive-sort">сначала дорогие</option>
+								<option value="fat" id="fat-sort">по жирности</option>
+							</select> 
+						</section>
+						<div class="range-filter">
+							<div class="price-filter">
+								<p>Цена:<span class="min-price">100 руб.</span> - <span class="max-price">500 руб.</span></p>
+							</div>
+							<div class="range-control">
+								<div class="scale">
+									<div style="width: 75%" class="bar"></div>
+	      							<div class="toggle min-toggle"></div>
+	      							<div class="toggle max-toggle"></div>
+	      						</div>
+	      					</div>
+	      				</div>
+						<section class="radio-filter">
+							<h4>Жирность:</h4>
+							<div class="radio-filter-body">
+								<label>
+									<input type="radio" name="fatness" value="0">0%
+								</label>
+								<label>
+									<input type="radio" name="fatness" value="до 10" checked>до 10%
+								</label>
+								<label>
+									<input type="radio" name="fatness" value="до 30">до 30%
+								</label>
+								<label>
+									<input type="radio" name="fatness" value="свыше 30">свыше 30%
+								</label>
+							</div>
+						</section>
+					</div>
+					<div class="main-filter-bottom">
+						<section class="radio-filter">
+							<h4>Наполнители:</h4>
+							<div class="radio-filter-body">
+								<label>
+									<input type="checkbox" name="chocolate" checked>Шоколадные
+								</label>
+								<label>
+									<input type="checkbox" name="sugar" checked>Сахарные присыпки
+								</label>
+								<label>
+									<input type="checkbox" name="fruits">Фрукты
+								</label>
+								<label>
+									<input type="checkbox" name="syrup">Сиропы
+								</label>
+								<label>
+									<input type="checkbox" name="jam">Джемы
+								</label>
+							</div>
+						</section>
+						<div class="filter-button">
+							<input type="submit" value="Применить">      							
 						</div>
 					</div>
-					<div class="range-filter">
-						<div class="price-filter">
-							<p>Цена:<span class="min-price">100 руб.</span> - <span class="max-price">500 руб.</span></p>
-						</div>
-						<div class="range-control">
-							<div class="scale">
-								<div class="bar"></div>
-							</div>
-							<div style='width: 75%' class='bar'></div>
-      							<div class="toggle min-toggle"></div>
-      							<div class="toggle max-toggle"></div>
-      						</div>
-      					</div>
-      				</div>
-      				<div class="fat-filter">
-      					<div class="fat">
-      						<p>Жирность:</p>
-      						<form action="#" method="post">
-      							<label>
-      								<input type="radio" name="fat" value="0">0%
-      							</label>
-      							<label>
-      								<input type="radio" name="fat" value="до 10" checked>до 10%
-      							</label>
-      							<label>
-      								<input type="radio" name="fat" value="до 30">до 30%
-      							</label>
-      							<label>
-      								<input type="radio" name="fat" value="свыше 30">свыше 30%
-      							</label>
-      						</form>
-      					</div>
-      				</div>
-      				<div class="additive-filter">
-      					<div class="additive">
-      						<p>Наполнители:</p>
-      						<form action="#" method="post">
-      							<label>
-      								<input type="checkbox" name="chocolate" checked>Шоколадные
-      							</label>
-      							<label>
-      								<input type="checkbox" name="sugar" checked>Сахарные присыпки
-      							</label>
-      							<label>
-      								<input type="checkbox" name="fruits">Фрукты
-      							</label>
-      							<label>
-      								<input type="checkbox" name="syrup">Сиропы
-      							</label>
-      							<label>
-      								<input type="checkbox" name="jam">Джемы
-      							</label>
-      						</form>
-      					</div>
-      				</div>
-      				<div class="filter-button">
-      					<div class="filter-btn">
-      						<form action="#" method="post">
-      							<input type="submit" value="Применить">      							
-      						</form>
-      					</div>
-      				</div>
-      			</div>
-      		</div>
-      	</div>
-    </div>
+				</form>
+			</div>
+		</div>
+	</div>
+		
 	<!-- Filter-end -->
 	<!-- Catalog -->
 	<div class="main-catalog">
@@ -231,6 +214,7 @@
 					</div>
 					<p>310 Р/кг<p>
 					<h4><a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></h4>
+					<a class="btn" href="#">Быстрый просмотр</a>
 				</article>
 				<article class="catalog-item">
 					<div class="catalog-round-item">
@@ -238,6 +222,7 @@
 					</div>
 					<p>380 Р/кг</p>
 					<h4><a href="#">Сливочно-кофейное с кусочками шоколада</a></h4>
+					<a class="btn" href="#">Быстрый просмотр</a>
 				</article>
 				<article class="catalog-item">
 					<div class="catalog-round-item">
@@ -245,6 +230,7 @@
 					</div>
 					<p>355 Р/кг</p>
 					<h4><a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a></h4>
+					<a class="btn" href="#">Быстрый просмотр</a>
 				</article>
 				<article class="catalog-item">
 					<div class="catalog-round-item">
@@ -252,6 +238,7 @@
 					</div>
 					<p>415 Р/кг</p>
 					<h4><a href="#">Сливочное крем-брюле с карамельной подливкой</a></h4>
+					<a class="btn" href="#">Быстрый просмотр</a>
 				</article>
 				<article class="catalog-item">
 					<div class="catalog-round-item">
@@ -259,6 +246,7 @@
 					</div>
 					<p>325 Р/кг</p>
 					<h4><a href="#">Сливочное с брусничным джемом</a></h4>
+					<a class="btn" href="#">Быстрый просмотр</a>
 				</article>
 				<article class="catalog-item">
 					<div class="catalog-round-item">
@@ -266,6 +254,7 @@
 					</div>
 					<p>410 Р/кг</p>
 					<h4><a href="#">Сливочно-черничное с цельными ягодами черники </a></h4>
+					<a class="btn" href="#">Быстрый просмотр</a>
 				</article>
 				<article class="catalog-item">
 					<div class="catalog-round-item">
@@ -273,6 +262,7 @@
 					</div>
 					<p>375 Р/кг</p>
 					<h4><a href="#">Сливочно-лимонное с карамельной присыпкой</a></h4>
+					<a class="btn" href="#">Быстрый просмотр</a>
 				</article>
 				<article class="catalog-item">
 					<div class="catalog-round-item">
@@ -280,6 +270,7 @@
 					</div>
 					<p>320 Р/кг</p>
 					<h4><a href="#">Сливочное с шоколадной стружкой</a></h4>
+					<a class="btn" href="#">Быстрый просмотр</a>
 				</article>
 				<article class="catalog-item">
 					<div class="catalog-round-item">
@@ -287,6 +278,7 @@
 					</div>
 					<p>440 Р/кг</p>
 					<h4><a href="#">Сливочно-ванильное с кусочками шоколада</a></h4>
+					<a class="btn" href="#">Быстрый просмотр</a>
 				</article>
 				<article class="catalog-item">
 					<div class="catalog-round-item">
@@ -294,6 +286,7 @@
 					</div>
 					<p>435 Р/кг</p>
 					<h4><a href="#">Сливочноe с ментоловым сиропом</a></h4>
+					<a class="btn" href="#">Быстрый просмотр</a>
 				</article>
 				<article class="catalog-item">
 					<div class="catalog-round-item">
@@ -301,6 +294,7 @@
 					</div>
 					<p>355 Р/кг</p>
 					<h4><a href="#">Сливочное с кусочками черного шоколада</a></h4>
+					<a class="btn" href="#">Быстрый просмотр</a>
 				</article>
 				<article class="catalog-item">
 					<div class="catalog-round-item">
@@ -308,16 +302,12 @@
 					</div>
 					<p>420 Р/кг</p>
 					<h4><a href="#">Сливочное с мятным сиропом</a></h4>
+					<a class="btn" href="#">Быстрый просмотр</a>
 				</article>
 			</section>
 		</div>
 	</div>
 	<!-- Catalog-end -->
-	<!-- Modal-catalog-item-->
-				<div class="modal-catalog">
-					<a class="btn" href="#">Быстрый просмотр</a>
-				</div>
-				<!-- Modal-catalog-item-end-->
 	<!-- Pages -->
 	<div class="page">
 		<div class="container">
