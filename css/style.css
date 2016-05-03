@@ -15,9 +15,10 @@ body {
   display: table;
   clear: both;
 }
-
+/* header */
 .main-header {
 	min-height: 120px;
+	margin-bottom: ;
 }
 .container {
 	background-color: lightgray;
@@ -33,23 +34,71 @@ body {
 }
 .main-navigation {
 	float: left;
-	width: 432px;
+	width: 402px;
 	min-height: 60px;
 	background-color: red;
 
 }
 .header-right {
 	float: right;
-	width: 261px;
-	min-height: 60px;
-	margin-bottom:  20px;
 	background-color: blue;
+}
+.header-right-top {
+	float: left;
+	width: 263px;
+	min-height: 32px;
+	margin-right: 9px;
+	margin-bottom: 20px;
+}
+.header-seacrh {
+	float: left;
+	width: 32px;
+	height: 32px;
+	margin-right: 9px;
+	background-color: red;
+}
+.search-icon {
 
 }
+.header-login {
+	float: left;
+	width: 93px;
+	margin-right: 9px;
+	background-color: black;
+
+}
+.header-cart {
+	float: right;
+	width: 117px;
+	margin-right: 0px;
+}
+.header-right-bottom {
+	width: 263px;
+	padding-top: 20px;
+	text-align: right;
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 16px;
+}
+
+}
+.header-phone span{
+	font-size: 22px;
+	font-weight: 900;
+	line-height: 24px;
+}
+
+
+
+
+
+
+
+
 .main-slider {
 }
 
-
+/* banners */
 .main-banners {
 	margin-bottom: 40px;
 }
@@ -72,6 +121,8 @@ body {
 	font-weight: 700;
 }
 
+
+/* catalog */
 .main-catalog {
 	margin-bottom: 40px;	
 }
@@ -86,7 +137,7 @@ body {
 	margin-right: 20px; 
 	font-size: 12px;
 }
-.catalog-item:last-child {
+.catalog-item:nth-child(4n) {
 	margin-right: 0px;
 }
 .cost {
@@ -107,6 +158,8 @@ body {
 .main-about {
 	margin-bottom: 40px;
 
+
+/* about company */
 }
 .about {
 	padding-top: 30px;
@@ -136,29 +189,111 @@ body {
 	width: 344px;
 }
 
-
+/* news&subcribe */
 .news-subcribe {
-	float: left;
-	width: 400px;
-	min-height: 230px;
-	margin-right: 20px;
-	margin-bottom: 40px;
-	padding-left: 20px; 
-	padding-bottom: 24px;
-	background-color: yellow; 
-}
-.news-subcribe:last-child {
-	margin-right: 0px;
+	margin-bottom: 40px;	
 }
 .bar {
-	padding-top: 30px;
+	float: left;
+	width: 380px;
+	min-height: 230px;
+	margin-right: 20px;
+	background-color: lightgreen;
+	padding-top: 28px;
 	padding-right: 20px;
 	padding-left: 20px;
 }
-.bar h6 {
-	font-size: 16px;
-	font-weight: 700;
+.bar:last-child {
+	margin-right: 0px;
 }
+.bar p {
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 22px; 	
+}
+.bar h4 {
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 30px; 
+}
+
+/* map */
+.map {
+	margin-bottom: 20px;
+	background-color: lightblue;
+	min-height: 430px;
+}
+.address {
+	float: right;
+	width: 302px;
+	min-height: 305px;
+	margin-top: 62px;
+	padding-top: 32px;
+	padding-left: 25px;
+	padding-right: 25px;
+	padding-bottom: 30px;
+	background-color: lightpink;
+}
+.address p {
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 20px;
+
+}
+.address p span {
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 24px;
+}
+
+/* footer */
+.footer {
+	margin-right: 20px;
+	margin-top: 36px;
+	margin-bottom: 25px;
+	font-size: 13px;
+	font-weight: 300px;
+	line-height: 18px;
+}
+.footer-social {
+	float: left;
+	width: 200px;
+}
+.social-btn {
+	float: left;
+	margin-right: 12px;
+}
+.social-btn:nth-child(4n) {
+	margin-right: 0px;
+}
+.footer-nav {
+	width: 420px;
+	
+}
+.footer-copyright {
+	float: right;
+	width: 200px;
+	margin-right: 0px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

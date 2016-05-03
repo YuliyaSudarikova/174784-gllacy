@@ -30,38 +30,38 @@
 					</li>
 				</ul>
 			</nav>
-			<div class="header-right">
+			<div class="header-right clearfix">
 				<div class="header-right-top">
 					<div class="header-seacrh">
 						<div class="search-icon"><a href="#"></a></div>
-						<div class="seacrh-modal">
+						<!-- <div class="seacrh-modal">
 							<form action="">
 								<input type="text" placeholder="Что ищем?">
 							</form>
+						</div> -->
+					</div>
+					<div class="header-login">
+						<a class="login-icon" href="#">Вход</a>
+						<!-- <div class="login-modal">
+							<form action="">
+								<input type="email" placeholder="Электронная почта">
+								<input type="password" placeholder="Пароль">
+								<button>Войти</button>
+								<a href="">Забыли пароль?</a>
+								<a href="">Новая регистрация</a>
+							</form>
+						</div> -->
+					</div>
+					<div class="header-cart">
+						<div class="cart">
+							<a href="">Пусто</a>
 						</div>
 					</div>
-				</div>
-				<div class="header-login">
-					<a class="login-icon" href="#">Вход</a>
-					<div class="login-modal">
-						<form action="">
-							<input type="email" placeholder="Электронная почта">
-							<input type="password" placeholder="Пароль">
-							<button>Войти</button>
-							<a href="">Забыли пароль?</a>
-							<a href="">Новая регистрация</a>
-						</form>
-					</div>
-				</div>
-				<div class="header-cart">
-					<div class="cart">
-						<a href="">Пусто</a>
-					</div>
-				</div>
-				<div class="header-right-bottom">
-					<div class="header-phone">
-						<p class="header-phone__time">С 10 до 20, ежедневно</p>
-						<p class="header-phone__tel"><a href="tel:+78124502525" title="phone">8 812 450-25-25</a></p>
+					<div class="header-right-bottom">
+						<div class="header-phone">
+							<p>С 10 до 20, ежедневно</p>
+							<span><a href="tel:+78124502525" title="phone">8 812 450-25-25</a></span>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -117,22 +117,30 @@
 		<div class="container">
 			<section class="catalog-list">
 				<article class="catalog-item bestseller">
-					<img src="http://placehold.it/200x200">
+					<div class="catalog-item-img">
+						<img src="http://placehold.it/200x200">
+					</div>
 					<div class="cost">310 ₽<span>/кг</span></div>
 					<h4><a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></h4>
 				</article>
-				<article class="catalog-item bestseller">	
-					<img src="http://placehold.it/200x200">
+				<article class="catalog-item bestseller">
+					<div class="catalog-item-img">	
+						<img src="http://placehold.it/200x200">
+					</div>
 					<div class="cost">380 ₽<span>/кг</span></div>
 					<h4><a href="#">Сливочно-кофейное с кусочками шоколада</a></h4>
 				</article>
 				<article class="catalog-item bestseller">
-					<img src="http://placehold.it/200x200">
+					<div class="catalog-item-img">
+						<img src="http://placehold.it/200x200">
+					</div>
 					<div class="cost">355 ₽<span>/кг</span></div>
 					<h4><a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a></h4>
 				</article>
-				<article class="catalog-item bestseller">	
-					<img src="http://placehold.it/200x200">
+				<article class="catalog-item bestseller">
+					<div class="catalog-item-img">	
+						<img src="http://placehold.it/200x200">
+					</div>
 					<div class="cost">415 ₽<span>/кг</span></div>
 					<h4><a href="#">Сливочное крем-брюле с карамельной подливкой</a></h4>
 				</article>
@@ -164,9 +172,9 @@
 	<!-- About-end -->
 	<!-- News-Subcribe -->
 	<div class="container">
-		<div class="news-subcribe">
+		<div class="news-subcribe clearfix">
 			<div class="bar news">
-				<h6>Новое в нашем блоге</h6>
+				<p>Новое в нашем блоге</p>
 				<h4><a href="#">10 способов сервировки фруктовых щербетов к столу</a></h4>
 			</div>
 			<div class="bar subcribe">
@@ -180,15 +188,15 @@
 	</div>
 	<!-- Map --><!-- News-Subcribe -->
 	<div class="map">
-		<img src="http://placehold.it/150x100">
-		<div class="container">
+		<img src="">
+		<div class="container clearfix">
 			<div class="address">
 				<p>Адрес главного офиса и офлайн магазина:<br>
-				ул. Большая Конюшенная 19/8, Санкт-Петербург</p>
+				<span>ул. Большая Конюшенная<br>19/8, Санкт-Петербург</span></p>
 				<p>Для заказов по телефону:<br>
-				8 812 450-25-25 (с 10 до 20 ежедневно)</p>
+				<span>8 812 450-25-25</span><br> (с 10 до 20 ежедневно)</p>
 				<a class="btn" href="#">Форма обратной связи</a>
-				<div class="form-feedback">
+				<!-- <div class="form-feedback">
 					<form action="#" method="post">
 						<p>Мы обязательно вам ответим!</p>
 						<label for="name">
@@ -202,15 +210,15 @@
 						</label>
 						<input type="submit" value="Отправить">
 					</form>
-				</div>
+				</div> -->
 			</div>
 		</div>
 	</div>
 	<!-- Map-end --><!-- News-Subcribe-end-->
     <!-- Footer -->
-	<footer>
-		<div class="container">
-			<div class="footer-social">
+	<footer class="footer">
+		<div class="container clearfix">
+			<div class="footer-social clearfix">
 				<a class="social-btn social-btn-twit" href="#"></a>
 				<a class="social-btn social-btn-inst" href="#"></a>
 				<a class="social-btn social-btn-fb" href="#"></a>
