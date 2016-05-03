@@ -70,30 +70,95 @@ body {
 	padding-bottom: 30px;
 	font-size: 35px;
 	font-weight: 700;
-
 }
 
 .main-catalog {
-	margin-bottom: 40px;
+	margin-bottom: 40px;	
+}
+.catalog-list {
 	font-size: 0px;
 	
 }
-.catalog-list {
+.catalog-item {
 	display: inline-block;
 	vertical-align: top;
+	width: 200px;
+	margin-right: 20px; 
 	font-size: 12px;
+}
+.catalog-item:last-child {
+	margin-right: 0px;
+}
+.cost {
+	font-size: 45px;
+	line-height: 45px; 
+	font-weight: 700;
+}
+.cost span {
+	font-size: 30px;
+}
+.catalog-item h4 {
+	margin-top: 16px;
+	text-align: center;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 22px; 
+}
+.main-about {
+	margin-bottom: 40px;
 
 }
-.catalog-item {
-	
-
+.about {
+	padding-top: 30px;
+	padding-right: 20px;
+	padding-left: 20px;
+	font-size: 0px;	
+}
+.about h4 {
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 30px; 
+}
+.about-item {
+	display: inline-block;
+	vertical-align: top;
+	width: 400px;
+	margin-right: 20px;
+	margin-bottom: 18px;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 22px; 
+}
+.about-item:nth-child(2n) {
+	margin-right: 0px;
+}
+.about-item p {
+	width: 344px;
 }
 
 
-
-
-
-
+.news-subcribe {
+	float: left;
+	width: 400px;
+	min-height: 230px;
+	margin-right: 20px;
+	margin-bottom: 40px;
+	padding-left: 20px; 
+	padding-bottom: 24px;
+	background-color: yellow; 
+}
+.news-subcribe:last-child {
+	margin-right: 0px;
+}
+.bar {
+	padding-top: 30px;
+	padding-right: 20px;
+	padding-left: 20px;
+}
+.bar h6 {
+	font-size: 16px;
+	font-weight: 700;
+}
 
 
 
