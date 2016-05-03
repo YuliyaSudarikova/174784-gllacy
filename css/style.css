@@ -227,6 +227,10 @@ body {
 	background: #ffffff url("img/news_block.png") no-repeat;
 	color: #5a5a5a;
 }
+.subcribe {
+	background: #f8f7f4 url("img/post_pattern.png") no-repeat;
+	color: #5a5a5a;
+}
 
 /* map */
 .map {
@@ -238,12 +242,16 @@ body {
 	float: right;
 	width: 302px;
 	min-height: 305px;
+	border-radius:  15px;
 	margin-top: 62px;
+	margin-bottom: 30px;
 	padding-top: 32px;
 	padding-left: 25px;
 	padding-right: 25px;
-	padding-bottom: 30px;
-	background-color: lightpink;
+	background-color: #fffffe;
+	color: #323232;
+
+
 }
 .address p {
 	font-size: 14px;
@@ -273,6 +281,18 @@ body {
 .social-btn {
 	float: left;
 	margin-right: 12px;
+}
+.social-btn .social-btn-twit {
+	background-image: url(img/twitter.svg);
+}
+.social-btn .social-btn-inst {
+	background-image: url(img/instagram.svg);
+}
+.social-btn .social-btn-fb {
+	background-image: url(img/facebook.svg);
+}
+.social-btn .social-btn-vk {
+	background-image: url(img/vk.svg);
 }
 .social-btn:nth-child(4n) {
 	margin-right: 0px;
