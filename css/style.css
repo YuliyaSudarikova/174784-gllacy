@@ -2,9 +2,10 @@ body {
 	min-width: 900px;
 	margin: 0;
 	padding: 0;
+	background: #a6938c;
 
 	/* Typography */
-	font-family: 'Roboto', 'Threbuchet', sans-serif;
+	font-family: 'Roboto', 'Threbuchet', 'Arial', sans-serif;
 	font-size: 16px;
 	font-weight: 500;
 	line-height: 22px; 
@@ -17,11 +18,10 @@ body {
 }
 /* header */
 .main-header {
-	min-height: 120px;
+	min-height: 75px;
 	margin-bottom: ;
 }
 .container {
-	background-color: lightgray;
 	width: 860px;
 	min-height: 120px;
 	margin: 0 auto;
@@ -107,10 +107,10 @@ body {
 	width: 400px;
 	min-height: 230px;
 	margin-right: 20px;
-	margin-bottom: 40px;
+	margin-bottom: 20px;
 	padding-left: 20px; 
 	padding-bottom: 24px;
-	background-color: yellow; 
+	 
 }
 .main-banner:last-child {
 	margin-right: 0px;
@@ -120,7 +120,12 @@ body {
 	font-size: 35px;
 	font-weight: 700;
 }
-
+.paspberry-banner {
+	background: #8d0918 url("img/raspberry_banner.png") no-repeat;
+}
+.chocolate-banner {
+	background: #7a4b2d url("img/chocolate_banner.png") no-repeat;
+}
 
 /* catalog */
 .main-catalog {
@@ -165,7 +170,9 @@ body {
 	padding-top: 30px;
 	padding-right: 20px;
 	padding-left: 20px;
+	background: #eee2c5 url("img/waffle_pattern.jpg") repeat-x;
 	font-size: 0px;	
+
 }
 .about h4 {
 	font-size: 24px;
@@ -215,6 +222,10 @@ body {
 	font-size: 24px;
 	font-weight: 700;
 	line-height: 30px; 
+}
+.news {
+	background: #ffffff url("img/news_block.png") no-repeat;
+	color: #5a5a5a;
 }
 
 /* map */
