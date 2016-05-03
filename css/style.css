@@ -2,8 +2,8 @@ body {
 	min-width: 900px;
 	margin: 0;
 	padding: 0;
-	/*background: #a6938c;*/
-	 background: #000000 url("../gllacy-index-900.jpg") no-repeat center top;
+	background: #8ea99a; /*#8996a6;#a6938c;*/
+	 /*background: #000000 url("../gllacy-index-900.jpg") no-repeat center top;*/
 
 	/* Typography */
 	font-family: 'Roboto', 'Threbuchet', 'Arial', sans-serif;
@@ -17,6 +17,8 @@ body {
   display: table;
   clear: both;
 }
+
+
 /* header */
 .main-header {
 	min-height: 75px;
@@ -69,6 +71,7 @@ body {
 	color: #ffffff;
 }
 .main-navigation a:hover {
+	color: #373737;
 	background-color: #f8f7f4;
 	font-size: 16px;
 	font-weight: 700;
@@ -80,39 +83,101 @@ body {
 
 
 .header-right {
+	position: relative;
 	float: right;
 	
 }
 .header-right-top {
-	float: left;
 	width: 263px;
 	min-height: 32px;
-	margin-right: 9px;
+	margin-top: 23px;
 	margin-bottom: 20px;
 }
 .header-seacrh {
 	float: left;
-	width: 32px;
-	height: 32px;
-	margin-right: 9px;
-	background: ;
+	margin-right: 12px;
 }
 .search-icon {
-
+	background: rgba(255,255,255,0.2) url(../img/search_icon.svg) no-repeat center;
+	width: 32px;
+	height: 32px;
+	border-radius: 50%;
 }
 .header-login {
 	float: left;
 	width: 93px;
 	margin-right: 9px;
-	background-color: black;
-
+	
 }
+.login-icon {
+	position: relative;
+	display: block;
+	padding: 8px 13px 8px 44px;
+	border-radius: 16px;
+	background: rgba(255,255,255,0.2);
+	color: #ffffff;
+	font-size: 14px;
+	line-height: 16px;
+	text-decoration: none;
+}
+.login-icon::before {
+	content: "";
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	background: url(../img/log_in.svg) no-repeat;
+	top: 6px;
+	left: 16px;
+}
+.header-login a:hover {
+	background-color: #f8f7f4;
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 16px;
+	color: #323232; 
+	text-decoration: none;
+}
+
 .header-cart {
 	float: right;
 	width: 117px;
 	margin-right: 0px;
 }
+
+.cart {
+	position: relative;
+	display: block;
+	padding: 7px 34px 8px 44px;
+	border-radius: 16px;
+	background: rgba(255,255,255,0.2);
+	color: #ffffff;
+	font-size: 14px;
+	line-height: 16px;
+	text-decoration: none;
+}
+.cart::before {
+	content: "";
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	background: url(../img/cart.svg) no-repeat;
+	top: 6px;
+	left: 16px;
+}
+.header-cart a:hover {
+	background-color: #f8f7f4;
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 16px;
+	color: #323232; 
+	text-decoration: none;
+}
+
+
 .header-right-bottom {
+	position: absolute;
+	right: 0;
+	bottom: -42px;
 	width: 263px;
 	padding-top: 20px;
 	text-align: right;
@@ -121,11 +186,17 @@ body {
 	line-height: 16px;
 }
 
-}
-.header-phone span{
+.header-phone span a {
 	font-size: 22px;
 	font-weight: 900;
 	line-height: 24px;
+	color: #ffffff;
+	text-decoration: none;
+
+}
+.header-phone p {
+	margin: 0;
+	margin-bottom: 5px;
 }
 
 
@@ -141,31 +212,60 @@ body {
 /* banners */
 .main-banners {
 	margin-bottom: 40px;
+	padding-bottom: 23px;
 }
 .main-banner {
 	float: left;
 	width: 400px;
-	min-height: 230px;
+	min-height: 200px;
 	margin-right: 20px;
-	margin-bottom: 20px;
 	padding-left: 20px; 
-	padding-bottom: 24px;
+	border-radius: 16px;
 	 
 }
 .main-banner:last-child {
 	margin-right: 0px;
 }
 .main-banner h2 {
-	padding-bottom: 30px;
 	font-size: 35px;
 	font-weight: 700;
 }
+.main-banner p {
+	line-height: 22px;
+	font-size: 18px;
+	font-weight: 500;
+}
+.btn {
+	display: block;
+	width: 165px;
+	margin-left: 175px;
+	margin-bottom: 21px;
+  	padding: 10px 20px;
+	background: linear-gradient(to top, #e74a35, #f26843);
+	box-shadow: 0 0 5px rgba(172,16,0,0.6);
+	border-radius: 25px;
+	border: none;
+	outline: none;
+	cursor: pointer;	
+	color: #ffffff;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 24px;
+	text-decoration: none;
+	text-align: center;
+	
+}
+
 .paspberry-banner {
-	background: #8d0918 url("../img/raspberry_banner.png") no-repeat;
+	position: relative;
+	background: #8d0918 url(../img/raspberry_banner.png) no-repeat;
+
 }
 .chocolate-banner {
-	background: #7a4b2d url("../img/chocolate_banner.png") no-repeat;
+	background: #7a4b2d url(../img/chocolate_banner.png) no-repeat;
 }
+
+
 
 /* catalog */
 .main-catalog {
@@ -184,6 +284,12 @@ body {
 }
 .catalog-item:nth-child(4n) {
 	margin-right: 0px;
+}
+.catalog-item-img {
+	width: 200px;
+	height: 200px;
+	overflow: hidden;
+	border-radius: 200px;
 }
 .cost {
 	font-size: 45px;
@@ -207,19 +313,21 @@ body {
 /* about company */
 }
 .about {
-	padding-top: 30px;
 	padding-right: 20px;
 	padding-left: 20px;
-	background: #eee2c5 url("img/waffle_pattern.jpg") repeat-x;
+	background: #eee2c5 url(../img/waffle_pattern.jpg) repeat-x;
 	font-size: 0px;	
+	color: #373737;
 
 }
 .about h4 {
+	padding-top: 30px;
 	font-size: 24px;
 	font-weight: 500;
 	line-height: 30px; 
 }
 .about-item {
+	position: relative;
 	display: inline-block;
 	vertical-align: top;
 	width: 400px;
@@ -231,6 +339,17 @@ body {
 }
 .about-item:nth-child(2n) {
 	margin-right: 0px;
+}
+.seo-icecream::before {
+	content: "";
+	position: absolute;
+	width: 47px;
+	height: 47px;
+	margin-right: 10px;
+	background: url(../img/seo_ice_cream.svg) no-repeat;
+	top: 6px;
+	left: 16px;
+
 }
 .about-item p {
 	width: 344px;
@@ -264,11 +383,11 @@ body {
 	line-height: 30px; 
 }
 .news {
-	background: #ffffff url("img/news_block.png") no-repeat;
+	background: #ffffff url(../img/news_block.png) no-repeat;
 	color: #5a5a5a;
 }
 .subcribe {
-	background: #f8f7f4 url("img/post_pattern.png") no-repeat;
+	background: #f8f7f4 url(../img/post_pattern.png) no-repeat;
 	color: #5a5a5a;
 }
 
@@ -323,16 +442,16 @@ body {
 	margin-right: 12px;
 }
 .social-btn .social-btn-twit {
-	background-image: url(img/twitter.svg);
+	background-image: url(../img/twitter.svg);
 }
 .social-btn .social-btn-inst {
-	background-image: url(img/instagram.svg);
+	background-image: url(../img/instagram.svg);
 }
 .social-btn .social-btn-fb {
-	background-image: url(img/facebook.svg);
+	background-image: url(../img/facebook.svg);
 }
 .social-btn .social-btn-vk {
-	background-image: url(img/vk.svg);
+	background-image: url(../img/vk.svg);
 }
 .social-btn:nth-child(4n) {
 	margin-right: 0px;
