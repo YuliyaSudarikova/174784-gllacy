@@ -2,7 +2,8 @@ body {
 	min-width: 900px;
 	margin: 0;
 	padding: 0;
-	background: #a6938c;
+	/*background: #a6938c;*/
+	 background: #000000 url("../gllacy-index-900.jpg") no-repeat center top;
 
 	/* Typography */
 	font-family: 'Roboto', 'Threbuchet', 'Arial', sans-serif;
@@ -20,6 +21,7 @@ body {
 .main-header {
 	min-height: 75px;
 	margin-bottom: ;
+
 }
 .container {
 	width: 860px;
@@ -28,20 +30,58 @@ body {
 }
 .main-logo {
 	float: left;
-	width: 149px;
-	min-height: 73px;
+	width: 154px;
+	height: auto;
 	margin-right: 15px;
+	margin-top: 9px;
+	margin-left: -6px;
 }
 .main-navigation {
 	float: left;
 	width: 402px;
 	min-height: 60px;
-	background-color: red;
+	margin-top: 23px;
 
 }
+.main-navigation >ul {
+	font-size: 0px;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.main-navigation ul > li {
+	display: inline-block;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 18px;
+	margin-right: 3px;
+}
+
+.main-navigation a {
+	display: block;
+	border-radius: 16px;
+	background-color: transparent;
+	padding: 8px 13px;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 18px;
+	color: #ffffff;
+}
+.main-navigation a:hover {
+	background-color: #f8f7f4;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 18px;
+	color: #323232; 
+	text-decoration: none;
+}
+
+
+
 .header-right {
 	float: right;
-	background-color: blue;
+	
 }
 .header-right-top {
 	float: left;
@@ -55,7 +95,7 @@ body {
 	width: 32px;
 	height: 32px;
 	margin-right: 9px;
-	background-color: red;
+	background: ;
 }
 .search-icon {
 
@@ -121,10 +161,10 @@ body {
 	font-weight: 700;
 }
 .paspberry-banner {
-	background: #8d0918 url("img/raspberry_banner.png") no-repeat;
+	background: #8d0918 url("../img/raspberry_banner.png") no-repeat;
 }
 .chocolate-banner {
-	background: #7a4b2d url("img/chocolate_banner.png") no-repeat;
+	background: #7a4b2d url("../img/chocolate_banner.png") no-repeat;
 }
 
 /* catalog */
@@ -243,7 +283,7 @@ body {
 	width: 302px;
 	min-height: 305px;
 	border-radius:  15px;
-	margin-top: 62px;
+	margin-top: 62px;]]]]]
 	margin-bottom: 30px;
 	padding-top: 32px;
 	padding-left: 25px;
