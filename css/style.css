@@ -23,7 +23,6 @@ body > input[type="radio"] {
 	background-position: top center;
 	transition: background-image 0.5s ease, 
 	background-color 0.5s ease;
-
 }
 .site-wrapper::before,
 .site-wrapper::after {
@@ -113,7 +112,7 @@ body > input[type="radio"] {
 	background-image: url(../img/icecream_1.png);
 }
 #btn-2:checked ~ .site-wrapper {
-	background-color: *#8996a6;
+	background-color: #8996a6;
 	background-image: url(../img/icecream_2.png);
 }
 #btn-3:checked ~ .site-wrapper {
