@@ -3,8 +3,8 @@ body {
 	margin: 0;
 	padding: 0;
 	background: #8ea99a; /*#8996a6;#a6938c;*/
-	 /*background: #000000 url("../gllacy-index-900.jpg") no-repeat center top;*/
-
+	/*background: #000000 url("../gllacy-index-900.jpg") no-repeat center top;
+*/
 	/* Typography */
 	font-family: 'Roboto', 'Threbuchet', 'Arial', sans-serif;
 	font-size: 16px;
@@ -12,6 +12,120 @@ body {
 	line-height: 22px; 
 	color: #ffffff;
 }
+body > input[type="radio"] {
+	display: none;
+}
+.site-wrapper {
+	min-width: 940px;
+	background-color: #8ea99a;
+	background-image: url(../img/icecream_1.png);
+	background-repeat: no-repeat;
+	background-position: top center;
+	transition: background-image 0.5s ease, 
+	background-color 0.5s ease;
+}
+.site-wrapper::before,
+.site-wrapper::after {
+	content: "";
+	visibility: hidden;
+}
+.site-wrapper::before,
+.site-wrapper::after {
+	content: "";
+	background: url(../img/icecream_1.png);
+}
+.site-wrapper::after {
+	content: "";
+	background: url(../img/icecream_2.png);
+}
+
+/* SLIDER */
+.main-slider {
+	position: relative;
+	margin-top: 270px;
+	text-align: center;
+	color: #ffffff;
+}
+.slide {
+	display: none;
+}
+.slide-title {
+	width: 700px;
+	margin: 0 auto;
+	margin-bottom: 30px;
+
+	font-weight: 900;
+	font-size: 60px; 
+	line-height: 60px;
+}
+.slide-btn {
+	display: inline-block;
+  	padding: 12px 50px;
+	background: linear-gradient(to top, #e74a35, #f26843);
+	box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
+	border-radius: 100px;	
+	font-weight: 700;
+	font-size: 31px;
+	line-height: 41px;
+	vertical-align: top;
+	color: #ffffff;
+	text-decoration: none;
+	text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
+}
+.slide-btn:hover {
+	background-color: linear-gradient(to top, #ec6f5e, #f58669);;
+	box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
+}
+.slide-btn:active {
+	background-color: linear-gradient(to top, #e1613e, #d84732);;
+	box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
+}
+.slide-controls {
+	position: absolute;
+	bottom:  25px;
+	left: 0;
+	z-index: 20;
+	font-size: 0;
+}
+.slider-controls label {
+	display: inline-block;
+	width: 17px;
+	height: 17px;
+	margin-right: 8px;
+	vertical-align: top;
+	background-color: transparent;
+	border: 2px solid #ffffff;
+	border-radius: 50%;
+	cursor: pointer; 
+}
+
+#btn-1:checked ~ .slide-wrapper #slide-1,
+#btn-2:checked ~ .slide-wrapper #slide-2,
+#btn-3:checked ~ .slide-wrapper #slide-3 {
+	display: block;
+}
+
+#btn-1:checked ~ .slide-wrapper {
+	background-color: #8ea99a;
+	background-image: url(../img/icecream_1.png);
+}
+#btn-2:checked ~ .slide-wrapper {
+	background-color: *#8996a6;
+	background-image: url(../img/icecream_2.png);
+}
+#btn-3:checked ~ .slide-wrapper {
+	background-color: #a6938c;
+	background-image: url(../img/icecream_3.png);
+}
+
+
+#btn-1:checked ~ .slide-wrapper label[for="btn-1"],
+#btn-2:checked ~ .slide-wrapper label[for="btn-2"],
+#btn-3:checked ~ .slide-wrapper label[for="btn-3"] {
+	background-color: #ffffff;
+}
+
+
 .clearfix::after {
   content: "";
   display: table;
@@ -26,7 +140,7 @@ body {
 
 }
 .container {
-	width: 860px;
+	width: 900px;
 	min-height: 120px;
 	margin: 0 auto;
 }
