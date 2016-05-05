@@ -45,7 +45,7 @@ body > input[type="radio"] {
 	margin-top: 270px;
 	text-align: center;
 	color: #ffffff;
-	margin-bottom: 40px;
+	margin-bottom: 43px;
 }
 .slide {
 	display: none;
@@ -110,14 +110,17 @@ body > input[type="radio"] {
 #btn-1:checked ~ .site-wrapper {
 	background-color: #8ea99a;
 	background-image: url(../img/icecream_1.png);
+	background-position: center 85px;
 }
 #btn-2:checked ~ .site-wrapper {
 	background-color: #8996a6;
 	background-image: url(../img/icecream_2.png);
+	background-position: center 85px;
 }
 #btn-3:checked ~ .site-wrapper {
 	background-color: #a6938c;
 	background-image: url(../img/icecream_3.png);
+	background-position: center 85px;
 }
 
 
@@ -142,7 +145,7 @@ body > input[type="radio"] {
 
 }
 .container {
-	width: 900px;
+	width: 860px;
 	min-height: 120px;
 	margin: 0 auto;
 }
@@ -162,14 +165,14 @@ body > input[type="radio"] {
 
 
 }
-.main-navigation > ul {
+.main-navigation-list {
 	font-size: 0px;
 	list-style: none;
 	margin: 0;
 	padding: 0;
 }
 
-.main-navigation ul > li {
+.main-navigation-item {
 	position: relative;
 	display: inline-block;
 	font-size: 16px;
@@ -179,7 +182,7 @@ body > input[type="radio"] {
 
 }
 
-.main-navigation a {
+.main-navigation-link {
 	display: block;
 	border-radius: 16px;
 	background-color: transparent;
@@ -189,7 +192,7 @@ body > input[type="radio"] {
 	line-height: 18px;
 	color: #ffffff;
 }
-.main-navigation a:hover {
+.main-navigation-link:hover {
 	color: #373737;
 	background-color: #f8f7f4;
 	font-size: 16px;
@@ -205,32 +208,51 @@ body > input[type="radio"] {
 	top: 37px;
 	display: inline-block;
 	width: 144px;
-	
 	list-style: none;
 	padding: 0px;
 	margin: 0px;
 	background-color: #f8f7f4;
 	border-radius: 5px;
+	padding-top: 5px;
 	
 }
-.sub-menu li {
+.sub-menu-item{
 	display: block;
 	white-space: nowrap;
+}
+.sub-menu-item:first-child {
+	position: relative;
+	margin-top: 4px;
+	margin-bottom: 5px;
+	border-radius: 5px 5px 0px 0px;
+	font-weight: 700;
+}
+.sub-menu-item:first-child::before {
+	content: '';
+	position: absolute;
+	bottom: 2px;
+	left: 7px;
+	width: 90%;
+	border-bottom: 1px solid #d1d0ce;
+}
+.sub-menu-item:last-child .sub-menu-item{
+	border-radius: 0px 0px 5px 5px;
+}
+.sub-menu-item.active {
+	font-weight: 900;
 
 }
-.sub-menu a {
+.sub-menu-link {
 	display:block;
-	padding: 13px 21px;
+	padding: 7px 21px 10px 21px;
 	font-size: 14px;
 	font-weight: 400;
 	line-height: 16px;
 	color: #323232;
 	text-decoration: none;
 	background-color: #f8f7f4;
-
-
 }
-.sub-menu a:hover {
+.sub-menu-link:hover {
 	display: block ;
 	font-size: 14px;
 	font-weight: 400;
@@ -238,11 +260,14 @@ body > input[type="radio"] {
 	color: #323232;
 	text-decoration: none;
 	background-color:#fbded8;
-	border-radius: 0;
 	
+}
+.sub-menu-link:first-child .sub-menu-item {
+	padding-bottom: 5px;
+	padding-top: 4px;
+	border-radius: 5px 5px 0px 0px;
 
 }
-
 
 .header-right {
 	position: relative;
