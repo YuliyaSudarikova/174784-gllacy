@@ -374,7 +374,7 @@ body > input[type="radio"] {
 /* banners */
 .main-banners {
 	margin-bottom: 40px;
-	padding-bottom: 23px;
+	
 }
 .main-banner {
 	float: left;
@@ -430,6 +430,7 @@ body > input[type="radio"] {
 
 
 /* catalog */
+
 .main-catalog {
 	margin-bottom: 40px;	
 }
@@ -466,13 +467,16 @@ body > input[type="radio"] {
 	text-align: center;
 	font-size: 16px;
 	font-weight: 500;
-	line-height: 22px; 
+	line-height: 22px;
+	margin-bottom: 0px; 
 }
-.main-about {
-	margin-bottom: 40px;
 
 
 /* about company */
+
+.main-about {
+	margin-bottom: 40px;
+
 }
 .about {
 	position: relative;
@@ -541,7 +545,7 @@ body > input[type="radio"] {
 	line-height: 22px; 	
 }
 .bar a {
-	display: block;
+	display: inline-block;
 	background-color: rgba(255,255,255,0.8);
 	width: 296px;
 	color: #373737;
@@ -604,39 +608,38 @@ body > input[type="radio"] {
 	font-weight: 300px;
 	line-height: 18px;
 }
-.footer-social {
+.social {
 	float: left;
 	width: 200px;
+	margin-right: 20px;
+	background-color: lightgreen;
 }
+
 .social-btn {
-	float: left;
+	display: inline-block;
+	width: 38px;
+	height: 38px;
 	margin-right: 12px;
+	background-color: #e6ebe9;
+	vertical-align: middle;
 }
-.social-btn .social-btn-twit {
-	background-image: url(../img/twitter.svg);
-}
-.social-btn .social-btn-inst {
-	background-image: url(../img/instagram.svg);
-}
-.social-btn .social-btn-fb {
-	background-image: url(../img/facebook.svg);
-}
-.social-btn .social-btn-vk {
-	background-image: url(../img/vk.svg);
-}
-.social-btn:nth-child(4n) {
+.social-btn:nth-child(4n){
 	margin-right: 0px;
+	
 }
 .footer-nav {
+	float: left;
 	width: 420px;
 	
 }
+
 .footer-copyright {
 	float: right;
 	width: 200px;
 	margin-right: 0px;
 
 }
+
 
 
 
