@@ -19,7 +19,7 @@
 				<nav class="main-navigation">
 					<ul class="main-navigation-list">
 						<li class="main-navigation-item">
-							<a class="main-navigation-link active" href="#">Каталог</a>
+							<a class="main-navigation-link" href="#">Каталог</a>
 							<ul class="sub-menu">
 								<li class="sub-menu-item">
 									<a class="sub-menu-link" href="#">Новинки</a>
@@ -245,22 +245,24 @@
 					<p>Для заказов по телефону:<br>
 					<span>8 812 450-25-25</span><br> (с 10 до 20 ежедневно)</p>
 					<a class="btn btn-feedback" href="#">Форма обратной связи</a>
-					<!-- <div class="form-feedback">
+					<div class="form-feedback">
 						<form action="#" method="post">
-							<button class="modal-content-close" title="Закрыть">Закрыть</button>
-							<p>Мы обязательно вам ответим!</p>
+							<p class="feedback-caption">Мы обязательно вам ответим!</p>
+							<button class="modal-content-close" title="Закрыть"></button>
 							<label for="name">
-								<input type="text" id="name" placeholder="Как вас зовут?">
+								<input class="feedback-contact" type="text" id="name" placeholder="Как вас зовут?">
 							</label>
 							<label for="e-mail">
-								<input type="text" id="e-mail" placeholder="Ваша почта для ответа?">
+								<input class="feedback-contact" type="text" id="e-mail" placeholder="Ваша почта для ответа?">
 							</label>
 							<label>
-								<textarea rows="5" placeholder="Ваш комментарий"></textarea>
+								<textarea class="comment" rows="5" placeholder="Ваш комментарий"></textarea>
 							</label>
-							<input type="submit" value="Отправить">
+							<div class="feedback-modal-btn">
+								<input class="btn btn-feedback-modal" type="submit" value="Отправить">
+							</div>
 						</form>
-					</div> -->
+					</div>
 				</div>
 			</div>
 
@@ -290,11 +292,12 @@
 					</div>
 				</div>
 				<div class="footer-copyright">
-	          		<img src="img/logo_copyright.svg" alt="HTML-Academy">
-	          		<p class="copyright-link">Сделано в <a href="https://htmlacademy.ru">HTML Academy <span>&copy</span></a> 2016</p>
-	        	</div>
-	        </div>
+					<img src="img/logo_copyright.svg" alt="HTML-Academy">
+					<p class="copyright-link">Сделано в <a href="https://htmlacademy.ru">HTML Academy <span>&copy</span></a> 2016</p>
+				</div>
+			</div>
 		</footer>
+		<!-- Footer-end -->
 	</div>
 </body>
 </html>
