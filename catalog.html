@@ -156,8 +156,8 @@
 					<div class="main-filter-top">
 						<section class="sorting-filter">
 							<p class="filter-name">Сортировка:</p>
-							<select class="filter-box" name="popular">
-								<option value="popular" id="popular-sort" selected>по пополярности</option>
+							<select class="filter-box-sorting" name="popular">
+								<option class="sort-box" value="popular" id="popular-sort" selected>по пополярности</option>
 								<option value="cheap" id="cheap-sort">сначала недорогие</option>
 								<option value="expensive" id="expensive-sort">сначала дорогие</option>
 								<option value="fat" id="fat-sort">по жирности</option>
@@ -178,46 +178,46 @@
 						<section class="radio-filter">
 							<p class="filter-name">Жирность:</p>
 							<div class="filter-box radio-filter-body">
-								<label>
-									<input type="radio" name="fatness" value="0">0%
+								<label class="radio-container">
+									<input class="fatness-radio" type="radio" name="fatness" value="0">0%
 								</label>
-								<label>
-									<input type="radio" name="fatness" value="до 10" checked>до 10%
+								<label class="radio-container">
+									<input class="fatness-radio" type="radio" name="fatness" value="до 10" checked><span class="custom"></span>до 10%
 								</label>
-								<label>
-									<input type="radio" name="fatness" value="до 30">до 30%
+								<label class="radio-container">
+									<input class="fatness-radio" type="radio" name="fatness" value="до 30">до 30%
 								</label>
-								<label>
-									<input type="radio" name="fatness" value="свыше 30">свыше 30%
+								<label class="radio-container">
+									<input class="fatness-radio" type="radio" name="fatness" value="свыше 30">свыше 30%
 								</label>
 							</div>
 						</section>
 					</div>
-					<div class="main-filter-bottom">
+					<div class="main-filter-bottom clearfix">
 						<p class="filter-name">Наполнители:</p>
 						<section class="radio-filter">
 							
 							<div class="filter-box radio-filter-body">
-								<label>
-									<input type="checkbox" name="chocolate" checked>Шоколадные
+								<label class="checkbox-container">
+									<input class="ingredient" type="checkbox" name="chocolate" checked>Шоколадные
 								</label>
-								<label>
-									<input type="checkbox" name="sugar" checked>Сахарные присыпки
+								<label class="checkbox-container">
+									<input class="ingredient" type="checkbox" name="sugar" checked>Сахарные присыпки
 								</label>
-								<label>
-									<input type="checkbox" name="fruits">Фрукты
+								<label class="checkbox-container">
+									<input class="ingredient" type="checkbox" name="fruits">Фрукты
 								</label>
-								<label>
-									<input type="checkbox" name="syrup">Сиропы
+								<label class="checkbox-container">
+									<input class="ingredient" type="checkbox" name="syrup">Сиропы
 								</label>
-								<label>
-									<input type="checkbox" name="jam">Джемы
+								<label class="checkbox-container">
+									<input class="ingredient" type="checkbox" name="jam">Джемы
 								</label>
 							</div>
+							<div class="filter-button">
+								<input class="btn-filter" type="submit" value="Применить">      							
+							</div>
 						</section>
-						<div class="filter-button">
-							<input type="submit" value="Применить">      							
-						</div>
 					</div>
 				</form>
 			</div>
