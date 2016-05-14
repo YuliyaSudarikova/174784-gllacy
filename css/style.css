@@ -690,6 +690,9 @@ body > input[type="radio"] {
 	background-repeat: no-repeat; 
 	background-position: right 16px center; 
 	cursor: pointer; 
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	appearance: none;
 	 
 }
 .filter-box {
@@ -729,13 +732,59 @@ body > input[type="radio"] {
 	height: 37px;
 }
 
+.range-filter {
+	width: 220px;
+
+}
+
 .range-control {
+	position: relative;
+	height: 35px;
+	padding-top: 15px;
+	padding-right: 20px;
+	padding-left: 20px;
 	background-color: rgba(255, 255, 255, .2);
 	-webkit-border-radius: 20px;
 	-moz-border-radius: 20px;
 	border-radius: 20px;
-	height: 35px;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	
 }
+.range-control .scale {
+	height: 5px;
+	background-color: rgba(255, 255, 255, 0.5);
+}
+.range-control .bar {
+	margin-left: 20px;
+	width: 75%;
+	height: 5px;
+	background-color: #f8f7f4; 
+}
+.range-control .toggle {
+	position: absolute;
+	top: 7px;
+	left: 40px;
+	width: 5px;
+	height: 5px;
+	border: 8px solid #fff;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+	-moz-box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.10);
+	-webkit-box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.10);
+	box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.10);
+	cursor: pointer;	
+}
+
+.toggle-min {
+  left: 39px;
+}
+.toggle-max {
+  right: 50px;
+}
+
 
 .radio-filter-body {
 	background-color: rgba(255, 255, 255, .2);
@@ -745,29 +794,6 @@ body > input[type="radio"] {
 	padding: 7px 14px;
 }
 
-.checkbox-filter-body input[type='checkbox'] {
-	opacity: 0;
-
-}
-.checkbox-filter-body label {
-	position: relative;
-	cursor: pointer;
-
-}
-.checkbox-filter-body label:after {
-	content: '';
-	position: absolute;
-	width: 20px;
-	height: 20px;
-	left: -20px;
-	top: 0;
-	background-image: url('../img/empty-check.png');
-	background-repeat: no-repeat;
-	background-position: center;
-}
-.checkbox-filter-body input[type='checkbox']:checked + label:after {
-	background-image: url('../img/check.png');
-}
 
 .radio-container,
 .checkbox-container {
@@ -818,11 +844,40 @@ body > input[type="radio"] {
 	margin-right: 13px;
 
 }
-.checkbox-filter label {
-	padding-right: 20px;
-	padding-left: 5px;	
+.checkbox-filter-body input[type='checkbox'] {
+	opacity: 0;
+	margin-left: 5px;
+
+}
+.checkbox-filter-body .check-label {
+	position: relative;
+	cursor: pointer;
+
+}
+.checkbox-filter-body label:after {
+	content: '';
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	left: -20px;
+	top: 0;
+	background-image: url('../img/empty-check.png');
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.checkbox-filter-body input[type='checkbox']:checked + label:after {
+	background-image: url('../img/check.png');
 }
 
+.checkbox-filter .check-label {
+	padding-right: 5px;
+	padding-left: 7px;	
+	white-space: nowrap;
+}
+.check-label:last-child {
+	padding-right: 0;
+	margin: 0;
+}
 
 .filter-button {
 	display: inline-block;
