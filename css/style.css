@@ -696,8 +696,7 @@ body > input[type="radio"] {
 	 
 }
 .filter-box {
-	padding-top: 9px; 
-	padding-right: 50px; 
+	padding-top: 9px;  
 	padding-bottom: 9px; 
 	padding-left: 15px; 
 	color: #ffffff; 
@@ -816,22 +815,36 @@ body > input[type="radio"] {
 	width: 415px;
 }
 .radio-filter input[type='radio'] {
-	opacity: .2;
+	display: none;	
 }
-.radio-filter input[type='radio']:checked + label:after {
-	background: url(../img/radio_check_on.svg) no-repeat center;
-}
-.radio-filter label {
+
+.radio-filter .radio-label {
 	position: relative;
+	cursor: pointer;
 }
-.radio-filter label:after {
+.radio-filter .radio-label:after {
 	content: '';
 	position: absolute;
-	left: -20px;
-	top: 0;
 	width: 20px;
 	height: 20px;
-	background: url(../img/radio_check_off.svg) no-repeat center;
+	left: 0;
+	top: 0;
+	background-image: url(../img/radio_check_off.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.radio-filter input[type='radio']:checked + .radio-label:after {
+	background-image: url(../img/radio_check_on.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.radio-filter .radio-label {
+	padding-left: 30px;	
+	margin-right: 20px;	
+}
+.radio-label:last-child {
+	padding-right: 0;
+	margin: 0;
 }
 
 .checkbox-filter {
@@ -842,8 +855,7 @@ body > input[type="radio"] {
 
 }
 .checkbox-filter-body input[type='checkbox'] {
-	opacity: 0;
-	margin-left: 5px;
+	display: none;
 
 }
 .checkbox-filter-body .check-label {
@@ -851,25 +863,26 @@ body > input[type="radio"] {
 	cursor: pointer;
 
 }
-.checkbox-filter-body label:after {
+.checkbox-filter-body .check-label:after {
 	content: '';
 	position: absolute;
 	width: 20px;
 	height: 20px;
-	left: -20px;
+	left: 0;
 	top: 0;
 	background-image: url('../img/empty-check.png');
 	background-repeat: no-repeat;
 	background-position: center;
 }
-.checkbox-filter-body input[type='checkbox']:checked + label:after {
+.checkbox-filter-body input[type='checkbox']:checked + .check-label:after {
 	background-image: url('../img/check.png');
+	background-repeat: no-repeat;
+	background-position: center;
 }
 
 .checkbox-filter .check-label {
-	padding-right: 5px;
-	padding-left: 7px;	
-	white-space: nowrap;
+	padding-left: 30px;	
+	margin-right: 20px;	
 }
 .check-label:last-child {
 	padding-right: 0;
