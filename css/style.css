@@ -778,11 +778,8 @@ body > input[type="radio"] {
 	cursor: pointer;	
 }
 
-.toggle-min {
-  left: 39px;
-}
-.toggle-max {
-  right: 50px;
+.toggle.max-toggle {
+  left: 125px;
 }
 
 
@@ -822,7 +819,7 @@ body > input[type="radio"] {
 	opacity: .2;
 }
 .radio-filter input[type='radio']:checked + label:after {
-	background-color: #ffffff;
+	background: url(../img/radio_check_on.svg) no-repeat center;
 }
 .radio-filter label {
 	position: relative;
@@ -834,7 +831,7 @@ body > input[type="radio"] {
 	top: 0;
 	width: 20px;
 	height: 20px;
-	background-color: #ff0000;
+	background: url(../img/radio_check_off.svg) no-repeat center;
 }
 
 .checkbox-filter {
