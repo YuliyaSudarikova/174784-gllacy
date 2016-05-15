@@ -3,6 +3,7 @@ body {
 	margin: 0;
 	padding: 0;
 	background: #8ea99a; 
+
 	
 	/* Typography */
 	font-family: 'Roboto', 'Threbuchet', 'Arial', sans-serif;
@@ -58,11 +59,13 @@ body > input[type="radio"] {
 	content: "";
 	visibility: hidden;
 
+
 }
 .site-wrapper::before,
 .site-wrapper::after {
 	content: "";
 	background: url(../img/icecream_1.png);
+
 
 }
 .site-wrapper::after {
@@ -130,20 +133,17 @@ body > input[type="radio"] {
 }
 
 #btn-1:checked ~ .site-wrapper {
+	height: 876px;
 	background-color: #8ea99a;
-	background-image: url(../img/icecream_1.png);
-	background-position: center 85px;
-	
+	background: url(../img/icecream_1.png) center 85px no-repeat, radial-gradient(#cdf4df, #91ac9d, #8ea99a);	
 }
 #btn-2:checked ~ .site-wrapper {
 	background-color: #8996a6;
-	background-image: url(../img/icecream_2.png);
-	background-position: center 85px;
+	background: url(../img/icecream_2.png) center 85px no-repeat, radial-gradient(#cbdeef, #8f9dad, #8996a6);
 }
 #btn-3:checked ~ .site-wrapper {
 	background-color: #a6938c;
-	background-image: url(../img/icecream_3.png);
-	background-position: center 85px;
+	background: url(../img/icecream_3.png) center 85px no-repeat, radial-gradient(#efdad1, #a8968f, #a6938c);
 }
 
 
