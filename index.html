@@ -221,12 +221,6 @@
 							Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет ему сохранить свой превосходный вкус.
 						</p>
 					</div>
-					<!--<div class="main-about-left">-->
-						<!---->
-					<!--</div>-->
-					<!--<div class="main-about-right">-->
-						<!---->
-					<!--</div>-->
 				</div>
 			</div>
 		</section>
@@ -244,10 +238,10 @@
 				</div>
 				<div class="other subcribe">
 					<div class="bg-subcribe">
-						<form action="#" method="post">
+						<form class="form-subscribe" action="#" method="post">
 							<label class="speech">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =) </label>
 							<input class="mail" type="text" name="e-mail" placeholder="Электронная почта">
-							<input class="btn btn-subcribe" type="submit" value="Отправить">
+							<button class="btn btn-subcribe" type="submit" value="Отправить">Отправить</button>
 						</form>
 					</div>
 				</div>
@@ -265,27 +259,8 @@
 					<p class="address-text">Для заказов по телефону:<br>
 					<span>8 812 450-25-25</span><br> (с 10 до 20 ежедневно)</p>
 					<a class="btn btn-feedback" href="#">Форма обратной связи</a>
-					<div class="form-feedback">
-						<form action="#" method="post">
-							<p class="feedback-caption">Мы обязательно вам ответим!</p>
-							<button class="modal-content-close" title="Закрыть"></button>
-							<label for="name">
-								<input class="feedback-contact" type="text" id="name" placeholder="Как вас зовут?">
-							</label>
-							<label for="e-mail">
-								<input class="feedback-contact" type="text" id="e-mail" placeholder="Ваша почта для ответа?">
-							</label>
-							<label>
-								<textarea class="comment" rows="5" placeholder="Ваш комментарий"></textarea>
-							</label>
-							<div class="feedback-modal-btn">
-								<input class="btn btn-feedback-modal" type="submit" value="Отправить">
-							</div>
-						</form>
-					</div>
 				</div>
 			</div>
-
 		</div>
 		<!-- Map-end --><!-- News-Subcribe-end-->
 	    <!-- Footer -->
@@ -318,6 +293,62 @@
 			</div>
 		</footer>
 		<!-- Footer-end -->
+		<div class="form-feedback">
+			<form action="#" method="post">
+				<p class="feedback-caption">Мы обязательно вам ответим!</p>
+				<button class="modal-content-close" title="Закрыть"></button>
+				<label for="name">
+					<input class="feedback-contact" type="text" id="name" name="name" placeholder="Как вас зовут?">
+				</label>
+				<label for="e-mail">
+					<input class="feedback-contact" type="text" id="e-mail" name="email" placeholder="Ваша почта для ответа?">
+				</label>
+				<label>
+					<textarea class="comment" rows="5" placeholder="Ваш комментарий"></textarea>
+				</label>
+				<div class="feedback-modal-btn">
+					<button class="btn btn-feedback-modal" type="submit" value="Отправить">Отправить</button>
+				</div>
+			</form>
+		</div>
 	</div>
+
+	<script type="text/javascript">
+		var link = document.querySelector(".btn-feedback");
+		var popup = document.querySelector(".form-feedback");
+		var close = popup.querySelector(".modal-content-close");
+		var login = popup.querySelector("[name=name]");
+		var form = popup.querySelector("form");
+		var contact = popup.querySelector("[name=email]");
+		var storage = localStorage.getItem("name");
+
+		link.addEventListener("click", function(event) {
+			event.preventDefault();
+			popup.classList.add("form-feedback-show");
+
+			if (storage) {
+          		login.value = storage;
+          		contact.focus();
+        	} else {
+          		login.focus();
+        	}
+
+		});
+
+		close.addEventListener("click", function(event) {
+			event.preventDefault();
+			popup.classList.remove("modal-content-show");
+		});
+
+		form.addEventListener("submit", function(event) {
+			if (!login.value || !contact.value) {
+			event.preventDefault();
+			console.log("Введите имя и адрес электронной почты"); 
+        } else {
+          localStorage.setItem("name", login.value);
+        }
+		});
+
+	</script>
 </body>
 </html>
