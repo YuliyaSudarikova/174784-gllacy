@@ -19,13 +19,13 @@
 				<nav class="main-navigation">
 					<ul class="main-navigation-list">
 						<li class="main-navigation-item">
-							<a class="main-navigation-link" href="#">Каталог</a>
+							<a class="main-navigation-link" href="catalog.html">Каталог</a>
 							<ul class="sub-menu">
 								<li class="sub-menu-item">
-									<a class="sub-menu-link" href="#">Новинки</a>
+									<a class="sub-menu-link" href="">Новинки</a>
 								</li>
 								<li class="sub-menu-item">
-									<a class="sub-menu-link" href="#" title="Сливочное">Сливочное</a>
+									<a class="sub-menu-link" href="catalog.html" title="Сливочное">Сливочное</a>
 								</li>
 								<li class="sub-menu-item">
 									<a class="sub-menu-link active-link" href="#" title="Щербеты">Щербеты</a>
@@ -85,8 +85,8 @@
 					</div>
 					<div class="header-right-bottom">
 						<div class="header-phone">
-							<p>С 10 до 20, ежедневно</p>
-							<span><a href="tel:+78124502525" title="phone">8 812 450-25-25</a></span>
+							<p class="timetable">С 10 до 20, ежедневно</p>
+							<span><a class="phone-link" href="tel:+78124502525" title="phone">8 812 450-25-25</a></span>
 						</div>
 					</div>
 				</div>
@@ -146,7 +146,7 @@
 							<img src="img/item_1.jpg" width="200" height="200" alt="item_1">
 						</div>
 						<div class="cost">310 ₽<span>/кг</span></div>
-						<h4>
+						<h4 class="catalog-item-title">
 							<a class="item-link" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
 						</h4>
 						<div class="btn-group">
@@ -159,7 +159,12 @@
 							<img src="img/item_2.jpg" width="200" height="200" alt="item_2">
 						</div>
 						<div class="cost">380 ₽<span>/кг</span></div>
-						<h4><a class="item-link" href="#">Сливочно-кофейное с кусочками шоколада</a></h4>
+						<h4 class="catalog-item-title">
+							<a class="item-link" href="#">Сливочно-кофейное с кусочками шоколада</a>
+						</h4>
+						<div class="btn-group">
+							<a href="" class="btn product-btn">Быстрый просмотр</a>
+						</div>
 					</article>
 					<article class="catalog-item  bestseller">
 						<div class="catalog-item-best">Хит</div>
@@ -167,7 +172,12 @@
 							<img src="img/item_3.jpg" width="200" height="200" alt="item_3">
 						</div>
 						<div class="cost">355 ₽<span>/кг</span></div>
-						<h4><a class="item-link" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a></h4>
+						<h4 class="catalog-item-title">
+							<a class="item-link" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
+						</h4>
+						<div class="btn-group">
+							<a href="" class="btn product-btn">Быстрый просмотр</a>
+						</div>
 					</article>
 					<article class="catalog-item bestseller">
 						<div class="catalog-item-best">Хит</div>
@@ -175,7 +185,12 @@
 							<img src="img/item_4.jpg" width="200" height="200" alt="item_4">
 						</div>
 						<div class="cost">415 ₽<span>/кг</span></div>
-						<h4><a class="item-link" href="#">Сливочное крем-брюле с карамельной подливкой</a></h4>
+						<h4 class="catalog-item-title">
+							<a class="item-link" href="#">Сливочное крем-брюле с карамельной подливкой</a>
+						</h4>
+						<div class="btn-group">
+							<a href="" class="btn product-btn">Быстрый просмотр</a>
+						</div>
 					</article>
 				</section>
 			</div>
@@ -185,7 +200,7 @@
 		<section class="main-about">
 			<div class="container">
 				<div class="about clearfix">
-					<h4>Магазин Глейси  — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h4>
+					<h4 class="about-gllacy">Магазин Глейси  — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h4>
 					<div class="about-item seo-technology">
 						<p class="seo-summary technology">
 							Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.
@@ -245,9 +260,9 @@
 			 </div>
 			<div class="container clearfix">
 				<div class="address">
-					<p>Адрес главного офиса и офлайн магазина:<br>
+					<p class="address-text">Адрес главного офиса и офлайн магазина:<br>
 					<span>ул. Большая Конюшенная<br>19/8, Санкт-Петербург</span></p>
-					<p>Для заказов по телефону:<br>
+					<p class="address-text">Для заказов по телефону:<br>
 					<span>8 812 450-25-25</span><br> (с 10 до 20 ежедневно)</p>
 					<a class="btn btn-feedback" href="#">Форма обратной связи</a>
 					<div class="form-feedback">
@@ -285,20 +300,20 @@
 				<div class="footer-nav">
 					<div class="m-footer">
 						<ul class="m-footer-left">
-							<li class="m-footer-link vendor"><a href="#"><img class="footer-nav-like" src="img/like.svg" width="" height="" align="like"> Для поставщиков</a></li>
-							<li class="m-footer-link"><a href="#">О производстве</a></li>
+							<li class="m-footer-link vendor"><a class="footer-link" href="#"><img class="footer-nav-like" src="img/like.svg" width="" height="" align="like"> Для поставщиков</a></li>
+							<li class="m-footer-link"><a class="footer-link" href="#">О производстве</a></li>
 						</ul>
 					</div>
 					<div class="m-footer">
 						<ul class="m-footer-right">
-							<li class="m-footer-link"><a href="#">Наши документы</a></li>
-							<li class="m-footer-link"><a href="#">Экологические стандарты</a></li>
+							<li class="m-footer-link"><a class="footer-link" href="#">Наши документы</a></li>
+							<li class="m-footer-link"><a class="footer-link" href="#">Экологические стандарты</a></li>
 						</ul>
 					</div>
 				</div>
 				<div class="footer-copyright">
 					<img src="img/logo_copyright.svg" alt="HTML-Academy">
-					<p class="copyright-link">Сделано в <a href="https://htmlacademy.ru">HTML Academy <span>&copy</span></a> 2016</p>
+					<p class="copyright-link">Сделано в <a class="author-link" href="https://htmlacademy.ru">HTML Academy</a> <span>&copy</span> 2016</p>
 				</div>
 			</div>
 		</footer>

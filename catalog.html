@@ -19,13 +19,13 @@
 				<nav class="main-navigation">
 					<ul class="main-navigation-list">
 						<li class="main-navigation-item">
-							<a class="main-navigation-link active-main" href="#">Каталог</a>
+							<a class="main-navigation-link active-main" href="catalog.html">Каталог</a>
 							<ul class="sub-menu">
 								<li class="sub-menu-item">
 									<a class="sub-menu-link" href="#">Новинки</a>
 								</li>
 								<li class="sub-menu-item">
-									<a class="sub-menu-link" href="#" title="Сливочное">Сливочное</a>
+									<a class="sub-menu-link sub-menu-active" href="#" title="Сливочное">Сливочное</a>
 								</li>
 								<li class="sub-menu-item">
 									<a class="sub-menu-link active-link" href="#" title="Щербеты">Щербеты</a>
@@ -78,51 +78,42 @@
 							</div>
 						</div>
 						<div class="header-cart">
-							<a class="cart header-link" href="#">Пусто</a>
-						</div>
-						<!-- Modal-cart-->
-						<!-- <div class="cart-modal">
-							<div class="cart-subjects">
-								<section class="cart-item">
-									<table class="buy">
-										<tbody>
-											<tr>
-												<td>
-													<form action="" method="post">
-														<button class="delete-subject"></button>
-													</form>
-												</td>
-												<td><img class="cart-subject-img" src="http://placehold.it/150x100"></td>
-												<td><h4>Пломбир с апельсиновым джемом</h4></td>
-												<td>1,5 кг x 200 руб.</td>
-												<td>300 руб.</td>
-											</tr>
-											<tr>
-												<td>
-													<form action="" method="post">
-														<button class="delete-subject"></button>
-													</form>
-												</td>
-												<td><img class="cart-subject-img" src="http://placehold.it/150x100"></td>
-												<td><h4>Клубничный пломбир с присыпкой из белого шоколада</h4></td>
-												<td>1,5 кг x 300 руб.</td>
-												<td>450 руб.</td>
-											</tr>
-											<tr>
-												<td colspan="4">Итого: 750 руб.</td>
-											</tr>
-										</tbody>
-									</table>
-									<a href="#" class="btn">Оформить заказ</a>
-								</section>
+							<div>
+								<a class="cart header-link" href="#">Пусто</a>
 							</div>
-						</div> -->
+							<!-- Modal-cart-->
+							<div class="cart-modal">
+								<div class="cart-subjects">
+									<section class="cart-item">
+										<ul class="cart-products">
+											<li class="cart-product-item">
+												<form class="cart-delete" action="" method="post">
+													<button class="delete-product"></button>
+												</form>
+												<div class="cart-product-img">
+													<img class="img-item" src="img/item_1.jpg" width="33" height="33" alt="ice-cream">
+												</div>
+												<div class="cart-product-name">
+													<h4 class="product-link-name" href="">Пломбир с апельсиновым джемом</h4>
+													<p>1.5кг x <span class="cart-item-cost">200 руб</span></p>
+													<p class="cart-product-cost">300 руб.</p>
+												</div>
+											</li>
+										</ul>
+										<div class="cart-total">Итого: 750 руб.</div>
+										<div class="cart-button">
+											<a href="#" class="btn btn-cart">Оформить заказ</a>
+										</div>
+									</section>
+								</div>
+							</div>
+						</div>
 						<!-- Modal-cart-end-->
 					</div>
 					<div class="header-right-bottom">
 						<div class="header-phone">
-							<p>С 10 до 20, ежедневно</p>
-							<span><a href="tel:+78124502525" title="phone">8 812 450-25-25</a></span>
+							<p class="timetable">С 10 до 20, ежедневно</p>
+							<span><a class="phone-link" href="tel:+78124502525" title="phone">8 812 450-25-25</a></span>
 						</div>
 					</div>
 				</div>
@@ -135,10 +126,10 @@
 			<div class="breadcrumbs-nav">
 				<ul class="bread-menu">
 					<li class="bread-link">
-						<a class="white-breadcrumbs item-link" href="index.html">Главная  &raquo;</a>
+						<a class="white-breadcrumbs item-link" href="index.html">Главная</a><span> &raquo;</span>
 					</li>
 					<li class="bread-link">
-						<a class="white-breadcrumbs item-link" href="#">Каталог  &raquo;</a>
+						<a class="white-breadcrumbs item-link" href="#">Каталог</a><span> &raquo;</span>
 					</li>
 					<li class="bread-link active">
 						<span>Сливочное</span>
@@ -160,10 +151,10 @@
 						<section class="sorting-filter">
 							<p class="filter-name">Сортировка:</p>
 							<select class="filter-box-sorting" name="popular">
-								<option class="sort-box" value="popular" id="popular-sort" selected>по пополярности</option>
-								<option value="cheap" id="cheap-sort">сначала недорогие</option>
-								<option value="expensive" id="expensive-sort">сначала дорогие</option>
-								<option value="fat" id="fat-sort">по жирности</option>
+								<option id="popular-sort" class="sort-box" value="popular" selected>по пополярности</option>
+								<option id="cheap-sort" value="cheap">сначала недорогие</option>
+								<option id="expensive-sort" value="expensive">сначала дорогие</option>
+								<option id="fat-sort" value="fat">по жирности</option>
 							</select>
 						</section>
 						<div class="range-filter">
@@ -174,7 +165,7 @@
 							</div>
 							<div class="range-control">
 								<div class="scale">
-									<div style="width: 50%" class="bar"></div>
+									<div style="width: 55%" class="bar"></div>
 	      							<div class="toggle min-toggle"></div>
 	      							<div class="toggle max-toggle"></div>
 	      						</div>
@@ -397,20 +388,20 @@
 				<div class="footer-nav">
 					<div class="m-footer">
 						<ul class="m-footer-left">
-							<li class="m-footer-link vendor"><a href="#"><img class="footer-nav-like" src="img/like.svg" width="" height="" align="like"> Для поставщиков</a></li>
-							<li class="m-footer-link"><a href="#">О производстве</a></li>
+							<li class="m-footer-link vendor"><a class="footer-link" href="#"><img class="footer-nav-like" src="img/like.svg" width="" height="" align="like"> Для поставщиков</a></li>
+							<li class="m-footer-link"><a class="footer-link" href="#">О производстве</a></li>
 						</ul>
 					</div>
 					<div class="m-footer">
 						<ul class="m-footer-right">
-							<li class="m-footer-link"><a href="#">Наши документы</a></li>
-							<li class="m-footer-link"><a href="#">Экологические стандарты</a></li>
+							<li class="m-footer-link"><a class="footer-link" href="#">Наши документы</a></li>
+							<li class="m-footer-link"><a class="footer-link" href="#">Экологические стандарты</a></li>
 						</ul>
 					</div>
 				</div>
 				<div class="footer-copyright">
 					<img src="img/logo_copyright.svg" alt="HTML-Academy">
-					<p class="copyright-link">Сделано в <a href="https://htmlacademy.ru">HTML Academy <span>&copy</span></a> 2016</p>
+					<p class="copyright-link">Сделано в <a class="author-link" href="https://htmlacademy.ru">HTML Academy</a> <span>&copy</span> 2016</p>
 				</div>
 			</div>
 		</footer>
