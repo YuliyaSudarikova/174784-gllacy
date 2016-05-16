@@ -53,7 +53,7 @@
 							<div class="search-icon header-link">
 								<div class="search-modal">
 									<div class="search-modal-inner">
-										<form action="">
+										<form>
 											<input class="search-field" type="text" placeholder="Что ищем?">
 										</form>
 									</div>
@@ -67,7 +67,7 @@
 							</div>
 							<div class="login-modal">
 								<div class="login-modal-inner">
-									<form action="">
+									<form>
 										<input class="field-login" type="text" name="e-mail" placeholder="Электронная почта">
 										<input class="field-login" type="password" placeholder="Пароль">
 										<button class="btn btn-login">Войти</button>
@@ -80,7 +80,7 @@
 							</div>
 						</div>
 						<div class="header-cart">
-							<a class="cart header-link" href="#">Пусто</a>
+							<a class="cart" href="#">Пусто</a>
 						</div>
 					</div>
 					<div class="header-right-bottom">
@@ -94,7 +94,7 @@
 		</header>
 		<!-- Slider -->
 		<div class="container">
-			<article class="main-slider">
+			<div class="main-slider">
 				<div class="slide" id="slide1">
 					<div class="slide-title">Крем-брюле и пломбир с малиновым джемом</div>
 					<a class="btn slide-btn" href="#">Давайте оба!</a>
@@ -112,12 +112,12 @@
 					<label for="btn-2"></label>
 					<label for="btn-3"></label>
 				</div>
-			</article>
+			</div>
 		</div>
 	
 		<!-- Slider-end -->
 		<!-- Banners -->
-		<section class="main-banners">
+		<div class="main-banners">
 			<div class="container clearfix">
 				<article class="main-banner paspberry-banner">
 					<h2>Малинка даром!</h2>
@@ -134,12 +134,12 @@
 					</div>
 				</article>
 			</div>
-		</section>
+		</div>
 		<!-- Banners-end -->
 		<!-- Catalog -->
 		<div class="main-catalog">
 			<div class="container">
-				<section class="catalog-list">
+				<div class="catalog-list">
 					<article class="catalog-item bestseller">
 						<div class="catalog-item-best">Хит</div>
 						<div class="catalog-item-img ">
@@ -192,7 +192,7 @@
 							<a href="" class="btn product-btn">Быстрый просмотр</a>
 						</div>
 					</article>
-				</section>
+				</div>
 			</div>
 		</div>
 		<!-- Catalog-end -->
@@ -250,14 +250,14 @@
 		<!-- Map --><!-- News-Subcribe -->
 		<div class="modal-content-map">
 			 <div class="yandex-map">
-				 <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=6cKuqHUs__VSI_BWaF1QOscUzL0zFN_d&width=100%&height=430&lang=ru_RU&sourceType=constructor&scroll=true"></script>
+				 <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=6cKuqHUs__VSI_BWaF1QOscUzL0zFN_d&lang=ru_RU&sourceType=constructor&scroll=true"></script>
 			 </div>
 			<div class="container clearfix">
 				<div class="address">
-					<p class="address-text">Адрес главного офиса и офлайн магазина:<br>
-					<span>ул. Большая Конюшенная<br>19/8, Санкт-Петербург</span></p>
+					<p class="address-text">Адрес главного офиса и <br> офлайн магазина:<br></p>
+					<p class="address-street">ул. Большая Конюшенная<br>19/8, Санкт-Петербург</p>
 					<p class="address-text">Для заказов по телефону:<br>
-					<span>8 812 450-25-25</span><br> (с 10 до 20 ежедневно)</p>
+					<span class="order-phone">8 812 450-25-25</span><br> (с 10 до 20 ежедневно)</p>
 					<a class="btn btn-feedback" href="#">Форма обратной связи</a>
 				</div>
 			</div>
@@ -288,10 +288,13 @@
 				</div>
 				<div class="footer-copyright">
 					<img src="img/logo_copyright.svg" width="109" height="36" alt="HTML-Academy">
-					<p class="copyright-link">Сделано в <a class="author-link" href="https://htmlacademy.ru">HTML Academy</a> <span>&copy</span> 2016</p>
+					<p class="copyright-link">Сделано в <a class="author-link" href="https://htmlacademy.ru">HTML Academy</a> <span>&copy;</span> 2016</p>
 				</div>
 			</div>
 		</footer>
+
+
+
 		<!-- Footer-end -->
 		<div class="form-feedback">
 			<form action="#" method="post">
@@ -311,44 +314,11 @@
 				</div>
 			</form>
 		</div>
+
+		<div class="shadow"></div>
+
 	</div>
 
-	<script type="text/javascript">
-		var link = document.querySelector(".btn-feedback");
-		var popup = document.querySelector(".form-feedback");
-		var close = popup.querySelector(".modal-content-close");
-		var login = popup.querySelector("[name=name]");
-		var form = popup.querySelector("form");
-		var contact = popup.querySelector("[name=email]");
-		var storage = localStorage.getItem("name");
-
-		link.addEventListener("click", function(event) {
-			event.preventDefault();
-			popup.classList.add("form-feedback-show");
-
-			if (storage) {
-          		login.value = storage;
-          		contact.focus();
-        	} else {
-          		login.focus();
-        	}
-
-		});
-
-		close.addEventListener("click", function(event) {
-			event.preventDefault();
-			popup.classList.remove("form-feedback-show");
-		});
-
-		form.addEventListener("submit", function(event) {
-			if (!login.value || !contact.value) {
-			event.preventDefault();
-			console.log("Введите имя и адрес электронной почты"); 
-        } else {
-          localStorage.setItem("name", login.value);
-        }
-		});
-
-	</script>
+	<script src="js/script.js"></script>
 </body>
 </html>

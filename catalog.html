@@ -24,10 +24,10 @@
 									<a class="sub-menu-link" href="#">Новинки</a>
 								</li>
 								<li class="sub-menu-item">
-									<a class="sub-menu-link sub-menu-active" href="#" title="Сливочное">Сливочное</a>
+									<a class="sub-menu-link sub-menu-active active-link" href="#" title="Сливочное">Сливочное</a>
 								</li>
 								<li class="sub-menu-item">
-									<a class="sub-menu-link active-link" href="#" title="Щербеты">Щербеты</a>
+									<a class="sub-menu-link " href="#" title="Щербеты">Щербеты</a>
 								</li>
 								<li class="sub-menu-item">
 									<a class="sub-menu-link" href="#" title="Фруктовый лед">Фруктовый лед</a>
@@ -78,7 +78,7 @@
 						</div>
 						<div class="header-cart">
 							<div>
-								<a class="cart header-link" href="#">Пусто</a>
+								<a class="cart header-link active" href="#">2 товара</a>
 							</div>
 							<!-- Modal-cart-->
 							<div class="cart-modal">
@@ -86,17 +86,31 @@
 									<section class="cart-item">
 										<ul class="cart-products">
 											<li class="cart-product-item">
-												<form class="cart-delete" action="" method="post">
-													<button class="delete-product"></button>
-												</form>
-												<div class="cart-product-img">
+												<a href="" class="cart-product-item-list delete-product"></a>
+												<div class="cart-product-item-list cart-product-img">
 													<img class="img-item" src="img/item_1.jpg" width="33" height="33" alt="ice-cream">
 												</div>
-												<div class="cart-product-name">
-													<h4 class="product-link-name" href="">Пломбир с апельсиновым джемом</h4>
-													<p>1.5кг x <span class="cart-item-cost">200 руб</span></p>
-													<p class="cart-product-cost">300 руб.</p>
+												<h4 class="cart-product-item-list product-link-name">
+													<a class="cart-item-link" href="">Пломбир с апельсиновым джемом</a>
+												</h4>
+												<p class="cart-product-item-list cart-product-kg">
+													1.5кг x <span class="cart-item-cost">200 руб</span>
+												</p>
+												<p class="cart-product-item-list cart-product-cost">300 руб.</p>
+											</li>
+											<li class="cart-product-item">
+												<a href="" class="cart-product-item-list delete-product"></a>
+												<div class="cart-product-item-list cart-product-img">
+													<img class="img-item" src="img/item_3.jpg" width="33" height="33" alt="ice-cream">
 												</div>
+												<h4 class="cart-product-item-list product-link-name">
+													<a class="cart-item-link" href="">Клубничный пломбир с присыпкой 
+												из белого шоколада</a>
+												</h4>
+												<p class="cart-product-item-list cart-product-kg">
+													1.5кг x <span class="cart-item-cost">300 руб</span>
+												</p>
+												<p class="cart-product-item-list cart-product-cost">450 руб.</p>
 											</li>
 										</ul>
 										<div class="cart-total">Итого: 750 руб.</div>
@@ -211,7 +225,7 @@
 
 	<!-- Filter-end -->
 	<!-- Catalog -->
-	<div class="main-catalog">
+	<div class="main-catalog main-catalog-inner">
 		<div class="container">
 			<section class="catalog-list">
 				<article class="catalog-item">
@@ -376,7 +390,7 @@
 	</div>
 	<!-- Pages-end -->
     <!-- Footer -->
-		<footer class="footer">
+		<footer class="footer footer-inner">
 			<div class="container clearfix">
 				<div class="social clearfix">
 					<a class="social-btn social-tw" href="#"></a>
