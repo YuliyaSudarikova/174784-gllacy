@@ -548,7 +548,6 @@ body > input[type="radio"] {
 .header-login {
 	float: left;
 	width: 93px;
-	margin-right: 9px;
 	position: relative;	
 }
 .login-icon-wrapper {
@@ -780,8 +779,6 @@ body > input[type="radio"] {
 }
 /* -----------------Breadcrumbs-end----------------------*/
 
-
-
 .catalog {
 	margin-bottom: 40px;
 }
@@ -802,7 +799,6 @@ body > input[type="radio"] {
 .main-filter {
 	display: inline-block;
 	font-size: 0;
-
 }
 .main-filter-top {
 	font-size: 0;
@@ -815,36 +811,33 @@ body > input[type="radio"] {
 	font-size: 14px;
 	font-weight: 300;
 	line-height: 16px;
-
 }
 .filter-box-sorting {
-	padding-top: 9px; 
-	padding-right: 35px;
-	padding-bottom: 9px; 
+	padding-right: 10px;
 	padding-left: 15px; 
 	color: #ffffff; 
 	font-size: 16px; 
 	font-weight: 400; 
 	line-height: 18px; 
-	border: none; 
+	border: none;
 	-webkit-border-radius: 100px;
 	-moz-border-radius: 100px;
 	border-radius: 100px; 
-	background-color: rgba(255, 255, 255, .2); 
-	background-image: url('../img/arrow.svg'); 
-	background-repeat: no-repeat; 
-	background-position: right 16px center; 
-	cursor: pointer; 
-	-moz-appearance: none;
+	background-color: rgba(255, 255, 255, .2);
+	background-image: url('../img/arrow.svg');
+	background-repeat: no-repeat;
+	background-position: right 16px center;
+	cursor: pointer;
 	-webkit-appearance: none;
 	appearance: none;
-	outline: none;	 
+	outline: none;
+	height: 35px;
 }
 .filter-box-sorting:hover {
 	color: #333;
-	background-image: url('../img/arrow_hover.svg'); 
-	background-repeat: no-repeat; 
-	background-position: right 16px center; 
+	background-image: url('../img/arrow_hover.svg');
+	background-repeat: no-repeat;
+	background-position: right 16px center;
 }
 .filter-box {
 	padding-top: 9px;  
@@ -1059,7 +1052,7 @@ input[type='checkbox']:checked + .check-label:hover:after {
 	vertical-align: top;
 	text-align: right;
 	width: 143px;
-	padding-top: 20px;
+	padding-top: 21px;
 }
 
  .btn-filter {
@@ -1515,7 +1508,7 @@ input[type='checkbox']:checked + .check-label:hover:after {
 	margin-top: -3px;
 	font-size: 14px;
 	font-weight: 400;
-	line-height: 20px;
+	line-height: 21px;
 
 }
 
@@ -1523,6 +1516,7 @@ input[type='checkbox']:checked + .check-label:hover:after {
 .address-text span {
 	margin: 0;
 	padding:0;
+	margin-bottom: 20px;
 	padding-top: 1px;
 	font-size: 18px;
 	font-weight: 700;
@@ -1824,17 +1818,4 @@ body .disabled:hover {
 	color: #fff;
 }
 
-
-/*textarea:hover,*/
-/*input:hover {*/
-	/*border: 2px solid #c7c6c5;*/
-	/*box-sizing: border-box;	*/
-/*}*/
-/*textarea:focus,*/
-/*input:focus {*/
-	/*border: 2px solid #c7c6c5;*/
-	/*color: #323232;*/
-	/*font-weight: 700;*/
-	/*box-sizing: border-box;*/
-/*}*/
 
