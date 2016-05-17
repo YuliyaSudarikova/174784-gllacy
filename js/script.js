@@ -12,7 +12,7 @@ var uvedomlenie = document.querySelector('.uvedomlenie');
 link.addEventListener("click", function(event) {
     event.preventDefault();
     popup.classList.add("form-feedback-show");
-    shadow.classList.add("form-feedback-show");
+    shadow.classList.add("shadow-show");
 
     if (storage) {
         login.value = storage;
@@ -26,7 +26,7 @@ link.addEventListener("click", function(event) {
 close.addEventListener("click", function(event) {
     event.preventDefault();
     popup.classList.remove("form-feedback-show");
-    shadow.classList.remove("form-feedback-show");
+    shadow.classList.remove("shadow-show");
 });
 
 form.addEventListener("submit", function(event) {
@@ -41,5 +41,5 @@ uvedomlenie.classList.add('form-feedback-show');
 
 shadow.addEventListener('click', function () {
     popup.classList.remove("form-feedback-show");
-    shadow.classList.remove("form-feedback-show");
+    shadow.classList.remove("shadow-show");
 });

@@ -6,9 +6,8 @@
 	<meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />
 	<meta content="telephone=no" name="format-detection">
 	<link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&subset=latin,cyrillic' rel='stylesheet'>
-	<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&subset=cyrillic' rel='stylesheet'>
 	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/style.min.css">
 </head>
 <body>
 	<input type="radio" id="btn-1" name="toggle" checked>
@@ -50,19 +49,18 @@
 				</nav>
 				<div class="header-right clearfix">
 					<div class="header-right-top">
-
 						<div class="header-search">
 							<div class="search-icon header-link">
 								<div class="search-modal">
 									<div class="search-modal-inner">
 										<form>
-											<input class="search-field" type="text" placeholder="Что ищем?">
+											<input id="search" class="search-field" type="text" placeholder="Что ищем?">
+											<label for="search"></label>
 										</form>
 									</div>
 								</div>
 							</div>
 						</div>
-
 						<div class="header-login">
 							<div class="login-icon-wrapper">
 								<a class="login-icon header-link" href="#">Вход</a>
@@ -70,8 +68,10 @@
 							<div class="login-modal">
 								<div class="login-modal-inner">
 									<form>
-										<input class="field-login" type="text" name="e-mail" placeholder="Электронная почта">
-										<input class="field-login" type="password" placeholder="Пароль">
+										<input id="login" class="field-login" type="text" name="e-mail" placeholder="Электронная почта">
+										<label for="login"></label>
+										<input id="password" class="field-login" type="password" placeholder="Пароль">
+										<label for="password"></label>
 										<button class="btn btn-login">Войти</button>
 										<div class="login-help">
 											<a class="login-help-link" href="">Забыли пароль?</a>
@@ -143,11 +143,11 @@
 			<div class="container">
 				<div class="catalog-list">
 					<article class="catalog-item bestseller">
-						<div class="catalog-item-best">Хит</div>
+						<div class="catalog-item-best"></div>
 						<div class="catalog-item-img ">
 							<img src="img/item_1.jpg" width="200" height="200" alt="item_1">
 						</div>
-						<div class="cost">310 ₽<span>/кг</span></div>
+						<div class="cost">310 <span>/кг</span></div>
 						<h4 class="catalog-item-title">
 							<a class="item-link" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
 						</h4>
@@ -156,11 +156,11 @@
 						</div>
 					</article>
 					<article class="catalog-item bestseller">
-						<div class="catalog-item-best">Хит</div>
+						<div class="catalog-item-best"></div>
 						<div class="catalog-item-img ">
 							<img src="img/item_2.jpg" width="200" height="200" alt="item_2">
 						</div>
-						<div class="cost">380 ₽<span>/кг</span></div>
+						<div class="cost">380 <span>/кг</span></div>
 						<h4 class="catalog-item-title">
 							<a class="item-link" href="#">Сливочно-кофейное с кусочками шоколада</a>
 						</h4>
@@ -169,11 +169,11 @@
 						</div>
 					</article>
 					<article class="catalog-item  bestseller">
-						<div class="catalog-item-best">Хит</div>
+						<div class="catalog-item-best"></div>
 						<div class="catalog-item-img ">
 							<img src="img/item_3.jpg" width="200" height="200" alt="item_3">
 						</div>
-						<div class="cost">355 ₽<span>/кг</span></div>
+						<div class="cost">355 <span>/кг</span></div>
 						<h4 class="catalog-item-title">
 							<a class="item-link" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
 						</h4>
@@ -182,11 +182,11 @@
 						</div>
 					</article>
 					<article class="catalog-item bestseller">
-						<div class="catalog-item-best">Хит</div>
+						<div class="catalog-item-best"></div>
 						<div class="catalog-item-img ">
 							<img src="img/item_4.jpg" width="200" height="200" alt="item_4">
 						</div>
-						<div class="cost">415 ₽<span>/кг</span></div>
+						<div class="cost">415 <span>/кг</span></div>
 						<h4 class="catalog-item-title">
 							<a class="item-link" href="#">Сливочное крем-брюле с карамельной подливкой</a>
 						</h4>
@@ -241,8 +241,11 @@
 				<div class="other subcribe">
 					<div class="bg-subcribe">
 						<form class="form-subscribe" action="#" method="post">
-							<label class="speech">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =) </label>
-							<input class="mail" type="text" name="e-mail" placeholder="Электронная почта">
+							<label class="speech" for="form-mail">
+								Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного,
+								что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)
+							</label>
+							<input id="form-mail" class="mail" type="text" name="e-mail" placeholder="Электронная почта">
 							<button class="btn btn-subcribe" type="submit" value="Отправить">Отправить</button>
 						</form>
 					</div>
@@ -261,7 +264,7 @@
 					<p class="address-text">Для заказов по телефону:</p>
 					<p class="order-phone">8 812 450-25-25</p>
 					<p class="address-text">(с 10 до 20 ежедневно)</p>
-					<a class="btn btn-feedback" href="#">Форма обратной связи</a>
+					<a class="btn btn-feedback" href="form.html">Форма обратной связи</a>
 				</div>
 			</div>
 		</div>
@@ -295,6 +298,9 @@
 				</div>
 			</div>
 		</footer>
+
+
+
 		<!-- Footer-end -->
 		<div class="form-feedback">
 			<form action="#" method="post">
@@ -314,8 +320,11 @@
 				</div>
 			</form>
 		</div>
+
 		<div class="shadow"></div>
+
 	</div>
-	<script src="js/script.js"></script>
+
+	<script src="js/script.min.js"></script>
 </body>
 </html>
