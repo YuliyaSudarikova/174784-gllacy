@@ -96,6 +96,7 @@ body > input[type="radio"] {
 	font-size: 31px;
 	line-height: 41px;
 }
+
 .slide-controls {
 	position: absolute;
 	bottom: 20px;
@@ -546,17 +547,15 @@ body > input[type="radio"] {
 	outline: none;
 	border: 1px solid #999999;
 }
-.field-login:hover + label {
+.field-login:hover {
 	padding: 9px 14px;
-	border: 2px solid #c7c6c5;
+	border: 2px solid #8fbdec;
 	color: #323232;
 }
-.field-login:focus + label{
+.field-login:focus {
 	padding: 9px 14px;
-	border: 2px solid #d3d3d2;
+	border: 2px solid #8fbdec;
 	color: #323232;
-	font-weight: 700;
-
 }
 .btn-login {
 	padding: 10px 26px;
@@ -1069,7 +1068,7 @@ input[type="checkbox"]:checked + .check-label:hover:after {
 .main-catalog {
 	margin-bottom: 0;
 }
-.main-catalog-inner .catalog-item {
+.main-catalog-inner .catalog-item{
 	margin-bottom: 23px;
 }
 .catalog-list {
@@ -1123,6 +1122,10 @@ input[type="checkbox"]:checked + .check-label:hover:after {
 .catalog-item:hover .btn-group {
 	display: block;
 }
+.catalog-item.bestseller:hover .catalog-item-best {
+	top: 8px;
+	left: 11px;
+}
 .catalog-item .btn-group {
 	display: none;
 	position: absolute;
@@ -1142,7 +1145,7 @@ input[type="checkbox"]:checked + .check-label:hover:after {
 	position: absolute;
 	top: -2px;
 	left: 1px;
-	z-index: 4;
+	z-index: 21;
 	display: block;
 	width: 60px;
 	height: 60px;
@@ -1365,6 +1368,10 @@ input[type="checkbox"]:checked + .check-label:hover:after {
 .mail {
 	position: relative;
 	display: block;
+	width: 225px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 	padding: 10px 40px 10px 14px;
 	vertical-align: middle;
 	color: #999999;
@@ -1762,12 +1769,4 @@ body .disabled:hover {
 	color: #fff;
 }
 /*-----END-FOOTER-----*/
-/*-----HOVER-INPUT-----*/
-
-
-
-
-
-
-
 
